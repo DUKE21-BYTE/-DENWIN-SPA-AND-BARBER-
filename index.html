@@ -1,0 +1,714 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Denwin Spa & Barbershop | Premium Grooming for Men</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f9d006",
+              "background-light": "#f8f8f5",
+              "background-dark": "#121212",
+              "neutral-dark": "#1c1c1c",
+              "accent-dark": "#2a2a2a",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+      .hero-gradient {
+        background: linear-gradient(
+          rgba(18, 18, 18, 0.6),
+          rgba(18, 18, 18, 0.9)
+        );
+      }
+      .glass-nav {
+        background: rgba(18, 18, 18, 0.8);
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-white font-display selection:bg-primary selection:text-background-dark"
+  >
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-white/5">
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a
+          href="index.html"
+          class="flex items-center gap-3 group cursor-pointer"
+        >
+          <div
+            class="bg-primary p-1.5 rounded-lg text-background-dark transform group-hover:rotate-12 transition-transform"
+          >
+            <span class="material-symbols-outlined block text-2xl"
+              >content_cut</span
+            >
+          </div>
+          <h1 class="text-xl font-extrabold tracking-tighter uppercase">
+            Denwin <span class="text-primary">Spa</span>
+          </h1>
+        </a>
+        <div class="hidden md:flex items-center gap-10">
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+            href="services-portfolio.html"
+            >Services</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+            href="meet-the-craftsmen.html"
+            >Team</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+            href="gallery.html"
+            >Gallery</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <a
+            href="book-experience.html"
+            class="bg-primary text-background-dark px-6 py-2.5 rounded-lg font-bold text-sm uppercase tracking-wider hover:bg-white transition-all shadow-lg shadow-primary/10"
+          >
+            Book Now
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          class="w-full h-full object-cover"
+          data-alt="Luxurious dark barbershop interior with leather chairs"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMxGVgNEm7uxldyzVK3KHg_vWCAlnAEgb2xQAB8q8oawTx9_vWSeu4WE3yST-_fqos6ZhBYAl3p3fhWuZI2lNHIHNj1GAk7E3KNVc9mosTnVY-kvpLOuBvqz5yAvSJst7s32fHsahovnBYLilvbKo_oxfkxlAIffF1CRzsHt1pd-659P69k7cNpWDEFtd3NAcoLu5gAtoicOEV3kYq395IVje9yXAFT3zLEzjtpJOVVIEIgQPvTDP9OwSnFS6rq_CLXjuDAxQR76o"
+        />
+        <div class="absolute inset-0 hero-gradient"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl px-6 text-center">
+        <span
+          class="inline-block text-primary font-bold tracking-[0.3em] uppercase mb-6 animate-pulse"
+          >Established 2018</span
+        >
+        <h1
+          class="text-5xl md:text-8xl font-black leading-tight mb-8 tracking-tighter"
+        >
+          ELEVATE YOUR <br /><span class="text-primary italic">GROOMING</span>
+        </h1>
+        <p
+          class="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto font-light leading-relaxed"
+        >
+          The ultimate sanctuary for the modern gentleman. Old-world
+          craftsmanship meets contemporary luxury in the heart of the city.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <a
+            href="book-experience.html"
+            class="w-full sm:w-auto px-10 py-5 bg-primary text-background-dark font-black rounded-lg text-lg uppercase tracking-widest hover:scale-105 transition-transform inline-block text-center"
+          >
+            Book Your Experience
+          </a>
+          <a
+            href="services-portfolio.html"
+            class="w-full sm:w-auto px-10 py-5 border border-white/20 hover:border-primary text-white font-black rounded-lg text-lg uppercase tracking-widest transition-all inline-block text-center"
+          >
+            View Menu
+          </a>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50"
+      >
+        <span class="material-symbols-outlined text-3xl"
+          >keyboard_double_arrow_down</span
+        >
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-24 px-6 bg-background-dark" id="services">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+        >
+          <div class="max-w-xl">
+            <h2 class="text-primary font-bold uppercase tracking-[0.3em] mb-4">
+              Our Services
+            </h2>
+            <h3 class="text-4xl md:text-5xl font-black tracking-tight">
+              CRAFTED FOR THE DISCERNING FELLA.
+            </h3>
+          </div>
+          <p class="text-white/50 max-w-sm">
+            From precision fades to rejuvenating facial treatments, we provide a
+            full range of high-end grooming services.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Haircut Card -->
+          <div
+            class="group relative overflow-hidden rounded-xl bg-accent-dark p-8 border border-white/5 hover:border-primary/30 transition-all"
+          >
+            <div
+              class="size-14 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-background-dark transition-all"
+            >
+              <span class="material-symbols-outlined text-3xl"
+                >content_cut</span
+              >
+            </div>
+            <h4 class="text-2xl font-bold mb-4 uppercase">
+              Precision Haircuts
+            </h4>
+            <p class="text-white/60 mb-8 leading-relaxed">
+              Tailored consultations followed by expert cutting techniques to
+              define your signature look.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li
+                class="flex items-center gap-2 text-sm font-semibold text-white/80"
+              >
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                Fade & Taper
+              </li>
+              <li
+                class="flex items-center gap-2 text-sm font-semibold text-white/80"
+              >
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                Scissor Work
+              </li>
+              <li
+                class="flex items-center gap-2 text-sm font-semibold text-white/80"
+              >
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                Style & Finish
+              </li>
+            </ul>
+            <div class="text-primary font-bold text-xl tracking-tight">
+              From $45
+            </div>
+          </div>
+          <!-- Shave Card -->
+          <div
+            class="group relative overflow-hidden rounded-xl bg-accent-dark p-8 border border-white/5 hover:border-primary/30 transition-all"
+          >
+            <div
+              class="size-14 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-background-dark transition-all"
+            >
+              <span class="material-symbols-outlined text-3xl">scooter</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 uppercase">
+              Traditional Shaves
+            </h4>
+            <p class="text-white/60 mb-8 leading-relaxed">
+              Experience the ultimate relaxation with our signature hot towel
+              straight-razor shave experience.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li
+                class="flex items-center gap-2 text-sm font-semibold text-white/80"
+              >
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                Hot Towel Prep
+              </li>
+              <li
+                class="flex items-center gap-2 text-sm font-semibold text-white/80"
+              >
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                Straight Razor
+              </li>
+              <li
+                class="flex items-center gap-2 text-sm font-semibold text-white/80"
+              >
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                Aftershave Balm
+              </li>
+            </ul>
+            <div class="text-primary font-bold text-xl tracking-tight">
+              From $35
+            </div>
+          </div>
+          <!-- Spa Card -->
+          <div
+            class="group relative overflow-hidden rounded-xl bg-accent-dark p-8 border border-white/5 hover:border-primary/30 transition-all"
+          >
+            <div
+              class="size-14 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-background-dark transition-all"
+            >
+              <span class="material-symbols-outlined text-3xl">self_care</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 uppercase">Spa Treatments</h4>
+            <p class="text-white/60 mb-8 leading-relaxed">
+              Relax and revitalize with premium skin treatments designed
+              specifically for men's skin health.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li
+                class="flex items-center gap-2 text-sm font-semibold text-white/80"
+              >
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                Deep Cleansing
+              </li>
+              <li
+                class="flex items-center gap-2 text-sm font-semibold text-white/80"
+              >
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                Scalp Massage
+              </li>
+              <li
+                class="flex items-center gap-2 text-sm font-semibold text-white/80"
+              >
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                Beard Conditioning
+              </li>
+            </ul>
+            <div class="text-primary font-bold text-xl tracking-tight">
+              From $60
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <a
+            href="services-portfolio.html"
+            class="inline-block px-8 py-3 border border-white/20 hover:border-primary text-white font-bold rounded-lg text-sm uppercase tracking-widest transition-all"
+            >View Full Menu</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="py-24 px-6 relative overflow-hidden" id="about">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+      >
+        <div class="relative">
+          <div
+            class="aspect-square rounded-xl overflow-hidden border-2 border-primary/20 p-4"
+          >
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              data-alt="Interior of a luxury barbershop with whiskey bottles"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAehQQl1_CyBP5ojNQG0wdUKhkOKDJdjfxczKkIO7X-7c7Ohl6V2GiBfou-WR3Hb5Hsy9ppDavbV_8t8edLLX62dlBQHVKdqWO1HxUhfF6e0zU6v8Sj9vBr9Wqa8wcuofP6_4S24b8cP56tvH57Y2wgd5lUH_TBdbS0xOROm8TH5DfC9iA7GnjAUP94yxmAk7HLbZ1ONLJ8yPkjDCEiKESHyC9SdqZ93OBmwAWZgNZHv_BkpmjcSKZ3-L_zyAye2HLQP29BZ0ln3JM"
+            />
+          </div>
+          <div
+            class="absolute -bottom-8 -right-8 bg-primary p-8 rounded-xl text-background-dark max-w-[240px] hidden md:block"
+          >
+            <div class="text-4xl font-black mb-1">12+</div>
+            <div class="text-sm font-bold uppercase tracking-widest">
+              Years of Master Barbery Experience
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-primary font-bold uppercase tracking-[0.3em]">
+            Our Philosophy
+          </h2>
+          <h3 class="text-4xl md:text-5xl font-black leading-tight">
+            MORE THAN JUST A HAIRCUT.
+          </h3>
+          <p
+            class="text-lg text-white/70 leading-relaxed italic border-l-4 border-primary pl-6 py-2"
+          >
+            "At Denwin, we believe that every man deserves a sanctuary where he
+            can look his best and feel even better. Our shop is built on the
+            pillars of respect, quality, and brotherhood."
+          </p>
+          <p class="text-white/50 leading-relaxed">
+            Founded in 2018, we've set out to redefine the barbershop
+            experience. We combine the precision of architectural barbering with
+            the luxury of a world-class spa. Whether you're here for a quick
+            taper or a full grooming package, you'll leave with more confidence
+            than you came in with.
+          </p>
+          <div class="flex items-center gap-4 mt-4">
+            <img
+              class="size-14 rounded-full object-cover border-2 border-primary"
+              data-alt="Portrait of the founder"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiFMQRH1ZpD8ip80jvPcFvFo1uv181EZQ1zCLtveAvt-A9Cin8EIgmqJ0TEc2GefJbsur08f7y15gz19xnPOw8Ksw6YVisTOZ1aVZERxjhfxRoJsVay_xXiqZrCSxLowsDEnVn0e6YS9okHwPgQcRXYwe5lL5PqvEM83tcqnm3f3WFb_P9FUA7yw9Hsbpp9HyNGRAxJaiAYIRXyoemzMQgaf-Yk3-Fzqj9XwbOOZccEl899Kj_-7GgkM2cOwc376tivpePFlLeZLk"
+            />
+            <div>
+              <div class="font-bold text-lg uppercase">Marcus Sterling</div>
+              <div
+                class="text-primary text-xs uppercase tracking-widest font-bold"
+              >
+                Founder & Master Barber
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Section -->
+    <section class="py-24 px-6 bg-accent-dark/30" id="team">
+      <div class="max-w-7xl mx-auto text-center mb-16">
+        <h2 class="text-primary font-bold uppercase tracking-[0.3em] mb-4">
+          The Craftsmen
+        </h2>
+        <h3 class="text-4xl md:text-5xl font-black mb-4">MEET YOUR TEAM.</h3>
+        <p class="text-white/50 max-w-2xl mx-auto">
+          Our barbers and therapists are handpicked for their skill, passion,
+          and commitment to the craft.
+        </p>
+      </div>
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <!-- Team Member 1 -->
+        <div class="group">
+          <div
+            class="relative aspect-[3/4] mb-6 overflow-hidden rounded-xl border border-white/5"
+          >
+            <img
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110"
+              data-alt="Barber profile portrait"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs0QlDHG3Sy0dEA3iHDrQas9-y7mfhvgRntHJp0M5KYomjlNOmawyINlJmYS1zQLa5lfAppZIgIVn4xwyfnBnSVFl2tHf2TzGamcEeKtj0TLj8sdCPRaQLwSrk6ki3-pn1WRUjacxXhEkEKNt2AiDGmmeb4p9wuBUv7JN5sW27VlFeojByqE8cw4xP8JjTXC8mj7PMS4wBzMVjaXONWz2xGtN2WQz0K57Vm3YTC1Q4lc-_t_eOlLOgsAkZAVnzssKWc1NWjDzFDFQ"
+            />
+            <div
+              class="absolute bottom-4 left-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform flex gap-2"
+            >
+              <a
+                href="book-experience.html"
+                class="flex-1 bg-primary text-background-dark py-2 rounded-lg font-bold text-xs uppercase tracking-widest text-center"
+                >Book Marcus</a
+              >
+            </div>
+          </div>
+          <h4 class="text-xl font-bold uppercase tracking-tight">
+            Marcus Sterling
+          </h4>
+          <p
+            class="text-primary text-xs font-bold uppercase tracking-widest mt-1"
+          >
+            Master Barber
+          </p>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="group">
+          <div
+            class="relative aspect-[3/4] mb-6 overflow-hidden rounded-xl border border-white/5"
+          >
+            <img
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110"
+              data-alt="Lead barber portrait"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-VxgHelhgFqFdOn4ZY-Pw_M2-I9am9velUwWRecYQOamVF-WOF5o0KVlMojum9PkAQMuurON7RKzwiCZN48WnvnbvRdZd05EQ6K2qnW7wEIkcAPaqiGPr3ZWuWS-_FAMv-Ud1jjtE-BMvOXD5UgSIJ5MkjVOdjXhoRkpbq7jC34e4s5RlZPYZoxTV1UYxDLeqLCyuY0_tQbroNFsO65EmQiZ3kupa0QcKYRjCWB1w9jKh9G0RDy-GmzBVKt76fYmxeZcqqBfswLc"
+            />
+            <div
+              class="absolute bottom-4 left-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform flex gap-2"
+            >
+              <a
+                href="book-experience.html"
+                class="flex-1 bg-primary text-background-dark py-2 rounded-lg font-bold text-xs uppercase tracking-widest text-center"
+                >Book Elias</a
+              >
+            </div>
+          </div>
+          <h4 class="text-xl font-bold uppercase tracking-tight">
+            Elias Thorne
+          </h4>
+          <p
+            class="text-primary text-xs font-bold uppercase tracking-widest mt-1"
+          >
+            Lead Stylist
+          </p>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="group">
+          <div
+            class="relative aspect-[3/4] mb-6 overflow-hidden rounded-xl border border-white/5"
+          >
+            <img
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110"
+              data-alt="Spa therapist portrait"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB0RfChMk4hpcEzMoOX2Yhd_TnKOfg7batllvvgh4sLsZ_A2xqhmzBmCb9ztPI2JAj0KxPVfCKSYgFpw-Xg52ZWo1jkMg1F_6EjNpQ_mS7_Mp601MfU4W84R5Vqm5GRMzJ7Kn_KJnA8AwO7H4Qp97tOkykroi8DtvShJL_d5qyro7hmG54yiDK06hiAAKvLmgmiR0YbJxsdaOu96zbI9OwOZ40PqtHVHubOhfSAPYWPcFlN0VS-Eo5UmadbdSfRl15dVRDDZdATSM"
+            />
+            <div
+              class="absolute bottom-4 left-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform flex gap-2"
+            >
+              <a
+                href="book-experience.html"
+                class="flex-1 bg-primary text-background-dark py-2 rounded-lg font-bold text-xs uppercase tracking-widest text-center"
+                >Book Leo</a
+              >
+            </div>
+          </div>
+          <h4 class="text-xl font-bold uppercase tracking-tight">Leo Vance</h4>
+          <p
+            class="text-primary text-xs font-bold uppercase tracking-widest mt-1"
+          >
+            Spa Therapist
+          </p>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="group">
+          <div
+            class="relative aspect-[3/4] mb-6 overflow-hidden rounded-xl border border-white/5"
+          >
+            <img
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110"
+              data-alt="Barber portrait"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0sVPPHYEo2iLK8f2OhNewIZqwJIfp2h6VzfXF0aVYUX0r_vpfCZjEMy5w2u57w_MFtnk9Iil3Pwxc_b-Q9Lud66xP-yRVWkib96OvosmXyQeCkUHHOZe1ep274FOtbBLgVvwr0MSogPAfbplRkNE298ZtsKOXnBJI5FDmBrdVDN3jgF02zFb2VHBr3CRZV8dSlGLhQz3Lw91IR5j5U8o3VKHCefDoE8K7mV-cyMuH4aGxEhO8DC1hUCtIBcompu-PH3qnt517yac"
+            />
+            <div
+              class="absolute bottom-4 left-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform flex gap-2"
+            >
+              <a
+                href="book-experience.html"
+                class="flex-1 bg-primary text-background-dark py-2 rounded-lg font-bold text-xs uppercase tracking-widest text-center"
+                >Book Julian</a
+              >
+            </div>
+          </div>
+          <h4 class="text-xl font-bold uppercase tracking-tight">
+            Julian Black
+          </h4>
+          <p
+            class="text-primary text-xs font-bold uppercase tracking-widest mt-1"
+          >
+            Junior Barber
+          </p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a
+          href="meet-the-craftsmen.html"
+          class="inline-block px-8 py-3 border border-white/20 hover:border-primary text-white font-bold rounded-lg text-sm uppercase tracking-widest transition-all"
+          >View All Staff</a
+        >
+      </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="py-24 px-6" id="gallery">
+      <div class="max-w-7xl mx-auto flex flex-col items-center mb-16">
+        <h2 class="text-primary font-bold uppercase tracking-[0.3em] mb-4">
+          Visual Tour
+        </h2>
+        <h3 class="text-4xl md:text-5xl font-black text-center mb-4">
+          INSIDE THE FELLAS DEN.
+        </h3>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-7xl mx-auto">
+        <div
+          class="aspect-square overflow-hidden rounded-lg col-span-2 row-span-2 relative group"
+        >
+          <img
+            class="w-full h-full object-cover group-hover:scale-105 transition-all"
+            data-alt="Wide shot of the luxury shop"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuASOuqk2VGASyF39LF00XFJNGyoXRmh4FAQXbD93WRnyu3S0K1n3vCgBHMX_kXe4_-UKQ_OSVYxqBRseh1luNMMZIFkVrNlZ8L9hHB5wYuX0biKfrQPLpLychgTHnYwkB3n8GYLMStXRdLP_G-TB6pui9tJqu7WJQ8wqW1LYyigICpu4k8KNM0R5tUy3RLSbE3vICgnTQJ27F-MJw00F---UW21lR9s3qr2om6QJ_aMZjxj6iMt7CpmxY5Vht5nI0CyOo0dmXA6les"
+          />
+          <div
+            class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"
+          ></div>
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg relative group">
+          <img
+            class="w-full h-full object-cover group-hover:scale-105 transition-all"
+            data-alt="Close up of barber tools"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCbWO6S6SGWIaDw2Av7C8pdR0Au9QxiEVZUlFGJvq4F_-EhPZhM6Z8qlovGwrcjJ0zuHFCt1eneHkR1HPS29X_vK7lJMgQ6pvBBXCshF3Z2rk0gX3u6lgZAGhbVFxHXiHmvjPRAMKNv_QOc14FxDSNcon2MInh6789RioQdRxof-nbGom9D3HTQugL71ZGPEk6Lr8JOaMemUvra3rBaRcRZGyZI_9G4C0iTzSBJoRoZV4CG4wvJ4lwH7jmyMxOpjzuWPGDw673T_4"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg relative group">
+          <img
+            class="w-full h-full object-cover group-hover:scale-105 transition-all"
+            data-alt="Detail of barbering work"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNOxtvz7ywwA6zroOOioqT61EM8YHoEFzshMcFtaNn6zZkQg0S4WkFUgtEJdsboJZUw_S-xBl5dYwxv_Y1DJDLBLI8w0f9gK3_9kqR5OckdIiH_Rv0GajDrGqF8FsIh8uPbWG0e-829nfWWifu5y8MNHrtNHpYFLiYxJggNeiRkjEbXseZ25sNHGjRQqBHfBrBJjplLk7zgOwYAw_fbwbz_-Lhmq4RgHDG8fn0_QgXpN9crwUqqNkb90H101_7eRQXtMLtXlnzrpU"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg relative group">
+          <img
+            class="w-full h-full object-cover group-hover:scale-105 transition-all"
+            data-alt="Luxury barber chair"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJsAbNvRQUls7c7Fl3WSHY5lAjfvMt4RENM6lsAUZCQra9wA1WN2npT3pec7QBM6B6xnud-wV8gvm8M0iSGOvyCeTbRAFdkV7BEjl-ixBX1pjDOcs5735iCaPzMJRabnOmYep_XAuugP519eBoxEhlxAFhLJqBB16TI-Z2ZmZodTMWRxvsz2XBbNaMjofFqrArvPBNh8jH3Vjv9S57viGJPludXmAbXiW2syObR3WjFgRrinbDy4iQ-KdrlMe0FstCfYF55iONeSo"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg relative group">
+          <img
+            class="w-full h-full object-cover group-hover:scale-105 transition-all"
+            data-alt="Whiskey bar in barbershop"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZhYwRj4RThW7kKlSUa_NwSKUkVwDdX7MKjQF4NcPRsuh_7ZuqdSSPNm8mKHI3dHGrnkiec_smTXDr22gQRiBwVREPwQRAuqTI1cFCS0uG3WlqPYhSiOk1r7Bxfsgyx75ZaJ_gDFnKk__pCSTbBRZ3ggAxVu8pm2GZWjN8DR1v20I8h3FbxtTS55wDoAkC0RQ7TC2aE67MP50RLlBFZCLvB80PZvUkMcO1W4XTJOG5RUZwFdvLZZeGmthoIhs3QjcGWym4Z5bU4ZU"
+          />
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a
+          href="gallery.html"
+          class="inline-block px-8 py-3 border border-white/20 hover:border-primary text-white font-bold rounded-lg text-sm uppercase tracking-widest transition-all"
+          >View Full Gallery</a
+        >
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-neutral-dark pt-24 pb-12 px-6 border-t border-white/5">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+      >
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center gap-3">
+            <div class="bg-primary p-1.5 rounded-lg text-background-dark">
+              <span class="material-symbols-outlined block text-2xl"
+                >content_cut</span
+              >
+            </div>
+            <h2 class="text-xl font-extrabold tracking-tighter uppercase">
+              Denwin <span class="text-primary">Spa</span>
+            </h2>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed">
+            Premium grooming services for the modern gentleman. Located in the
+            heart of the city, providing quality haircuts, shaves and spa
+            treatments.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="size-10 rounded-lg bg-accent-dark flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all"
+            >
+              <span class="material-symbols-outlined">social_leaderboard</span>
+            </a>
+            <a
+              href="#"
+              class="size-10 rounded-lg bg-accent-dark flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all"
+            >
+              <span class="material-symbols-outlined">photo_camera</span>
+            </a>
+            <a
+              href="#"
+              class="size-10 rounded-lg bg-accent-dark flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all"
+            >
+              <span class="material-symbols-outlined">play_circle</span>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h4 class="text-lg font-bold uppercase tracking-widest text-primary">
+            Location
+          </h4>
+          <div class="flex flex-col gap-4 text-white/60 text-sm">
+            <p class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary text-xl"
+                >location_on</span
+              >
+              123 Gentlemen's Ave, Suite 400<br />New York City, NY 10012
+            </p>
+            <p class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary text-xl"
+                >call</span
+              >
+              +1 (555) 012-3456
+            </p>
+            <p class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary text-xl"
+                >mail</span
+              >
+              hello@fellasspa.com
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h4 class="text-lg font-bold uppercase tracking-widest text-primary">
+            Hours
+          </h4>
+          <div class="flex flex-col gap-2 text-white/60 text-sm">
+            <div class="flex justify-between border-b border-white/5 pb-2">
+              <span>Mon - Fri</span>
+              <span class="font-bold text-white">09:00 - 20:00</span>
+            </div>
+            <div class="flex justify-between border-b border-white/5 pb-2">
+              <span>Saturday</span>
+              <span class="font-bold text-white">10:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between pb-2">
+              <span>Sunday</span>
+              <span class="text-primary font-bold">Closed</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h4 class="text-lg font-bold uppercase tracking-widest text-primary">
+            Stay Sharp
+          </h4>
+          <p class="text-white/50 text-sm">
+            Subscribe to get tips on grooming and exclusive offers.
+          </p>
+          <div class="flex gap-2">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="bg-accent-dark border-none rounded-lg flex-1 text-sm focus:ring-1 focus:ring-primary placeholder:text-white/20"
+            />
+            <button class="bg-primary text-background-dark p-2 rounded-lg">
+              <span class="material-symbols-outlined block">send</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-white/30 text-xs font-bold uppercase tracking-[0.2em]"
+      >
+        <p>© 2024 Denwin Spa & Barbershop. All Rights Reserved.</p>
+        <div class="flex gap-8">
+          <a href="#" class="hover:text-primary transition-colors"
+            >Privacy Policy</a
+          >
+          <a href="#" class="hover:text-primary transition-colors"
+            >Terms of Service</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

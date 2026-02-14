@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Gallery | Denwin Spa - Premium Grooming Experience</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9d006",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#231f0f",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-rows: 200px;
+            gap: 1rem;
+        }
+        .masonry-item-tall {
+            grid-row: span 2;
+        }
+        .masonry-item-wide {
+            grid-column: span 2;
+        }
+        @media (max-width: 640px) {
+            .masonry-item-wide {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-white antialiased">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="text-primary">
+                    <span class="material-symbols-outlined text-3xl">content_cut</span>
+                </div>
+                <h1 class="text-xl font-extrabold tracking-tight uppercase">Denwin<span class="text-primary">Spa</span></h1>
+            </a>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors border-b-2 border-primary pb-1" href="gallery.html">Gallery</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="services-portfolio.html">Services</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="book-experience.html">Booking</a>
+            </nav>
+            <a href="book-experience.html" class="bg-primary text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider hover:bg-primary/90 transition-all">
+                Book Appointment
+            </a>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 lg:px-20 py-12">
+        <!-- Hero Title Section -->
+        <div class="mb-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="max-w-2xl">
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm mb-3 block">Visual Showcase</span>
+                    <h2 class="text-5xl md:text-6xl font-black mb-6 leading-tight">The Denwin <br/>Experience</h2>
+                    <p class="text-white/60 text-lg max-w-lg">
+                        Explore our curated gallery of artisan grooming, luxury shop interiors, and the sharpest styles in the city.
+                    </p>
+                </div>
+                <div class="flex gap-2 bg-white/5 p-1.5 rounded-xl border border-white/10 overflow-x-auto whitespace-nowrap">
+                    <button class="px-6 py-2 rounded-lg bg-primary text-background-dark font-bold text-sm">All Shots</button>
+                    <button class="px-6 py-2 rounded-lg hover:bg-white/10 text-white/70 hover:text-white font-semibold text-sm transition-all">Interior</button>
+                    <button class="px-6 py-2 rounded-lg hover:bg-white/10 text-white/70 hover:text-white font-semibold text-sm transition-all">Barbers</button>
+                    <button class="px-6 py-2 rounded-lg hover:bg-white/10 text-white/70 hover:text-white font-semibold text-sm transition-all">Styles</button>
+                </div>
+            </div>
+        </div>
+        <!-- Media Grid -->
+        <div class="masonry-grid mb-24">
+            <!-- Large Focus Item -->
+            <div class="masonry-item-tall masonry-item-wide relative group overflow-hidden rounded-xl bg-neutral-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Modern luxury barber shop interior with leather chairs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuALym3-RzZ0uWjMaYOs2Cz9PV3WWItKMv20YNffE3mbvcWcPw8vUY5ZHFsyZxiaftFuUl2wRtGYWcTXoHL0OLR-nJkSHKvO_OFwB_YLstD9MTV2BYcpNkSLL4nkdp1rR9H-cpzzUcZSt7vzJKm5tIoqxozBCfQ-Kqx2eINiHf8jUk_R7NeV-YXqm13xbfZJ5EqiSR0OlPxobSFAjc_DAmuSgTuBTGzStbNWUBQzl67zLukbffw5cQq7Ozs6OahNHjViseyY9fUbUQI')"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-primary text-xs font-bold tracking-widest uppercase mb-1">Interior</span>
+                    <h3 class="text-2xl font-bold">The Main Lounge</h3>
+                </div>
+            </div>
+            <!-- Standard Items -->
+            <div class="relative group overflow-hidden rounded-xl bg-neutral-800 border-2 border-transparent hover:border-primary/50 transition-all duration-300">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Barber precisely trimming a client's beard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDca2m7QRmLzGbANDly3ARXoASQWEaAy74AFOfo7WNtuJqDLvuRwsByy5_qY5bpfEu7TuBfIMA4-FZi-8fGdl0yYhkSF-acsiD1nttGNn9W01H9E5X0tVuxHM7yL71WKiq_ErT2_IHhEfRWqnYBEQ_QQTzqjt9gFbjKahxS_XZel5KEFWbPG4ceuXTEMaXKlbsTodPsM-VBsKGWwgEKUs-dTIdiC0MuMHKmMuFD0QNnNfYhr5rjtAG4KaWX3Ggza0i7uSHDj2hUEhA')"></div>
+                <div class="absolute top-4 right-4 bg-background-dark/80 backdrop-blur-md p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="material-symbols-outlined text-primary">zoom_in</span>
+                </div>
+            </div>
+            <div class="masonry-item-tall relative group overflow-hidden rounded-xl bg-neutral-800 border-2 border-transparent hover:border-primary/50 transition-all duration-300">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Close up of professional barber tools and scissors" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDg7bM9LmMhjQOUrNfkiIW5lQjfr7IczcUKlmJUACoq8cX60de6vnPEnYU8l3k-laugJ-2JNyLuytUT8_UyN4vuUo_H0JpMoU2TaK_UnJR4abHKHMWNoSV1z2FuBwXWWPDbE7seOq-aBXAFj7Ao4AmxNuFW345hyLCamtC_HLnuWZtnGUJKlWMeB_rL7mgJaoxFaT6i1nMN9WSz5h6ViOPUdApML-1lByEWfpwxKqum95srrW3tfLdcSQ6bXRzSpNHI7cC8MQRQk3Y')"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark/60 to-transparent"></div>
+            </div>
+            <div class="relative group overflow-hidden rounded-xl bg-neutral-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Sharp skin fade haircut on a male client" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5xIW-d1YJPO3C8wkOMppGydnrY3_IklkAlDFDJvUSfw-prDEbTTgQQcpOeykHktdcxWl2b1n48kx5SYHZyPwbLfq-HehaVZKaJlxqeJJkK2n8s_0mD7TV6p25SjFpmjGu5JBu5rQuNzwjeV4e8kYggL1uZC8-zhHB-yTI_PMDkTnwCrZIpdnUszwMJRk_3N8OHheEXP4Uwz1DvdCqLM8PbTECM9zZ3kYXQCDGQFpIY5U-rcPBTv6kn_aeaSli-L8RyM3DUR55PCo')"></div>
+            </div>
+            <div class="relative group overflow-hidden rounded-xl bg-neutral-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Vintage barber pole and shop exterior details" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvGrlLY1xUdkGrxw_rwYBMWZN08QLEZ2DKxPPrME774bi_3XeO_VvvadPILNlP7Enzn2BIATPq74BesXE00oIWl7n7KOjJVaUVoU8ZBxeNuGbypA6OtXH81xIRfel3qS2miiJQCX908fRs3jnag2gs5eUXKjOmkIytITtAY-k2vErzYaXAMgcEeDTAB1ATeho4S7zSGraK7WLNtip7W8VO_GcrVgF-msqPzNiZbgg2XHNIwuPWv9jsJ8Ob3uA2vJcTNJ6AX9mU5Y4')"></div>
+            </div>
+            <div class="masonry-item-wide relative group overflow-hidden rounded-xl bg-neutral-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Wide shot of the barber shop grooming stations" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyV9FciOOUhoiW2BBo6N5rw7kMDTXPud25xRU4B-pXfCh3IpidFEBquM-IeBx5IREMYMjmDXKHSfxLOzGnP1T2RWnkQunwJcQF8mwEvZzP5OxAMIo1_eptrFDJnHdd5hBjppqzu2w6VbTIhJ3o-Qgmmx4zxpNSd6wE3tfW8pr3F5F5v9Z2N9fqJNNPg5LnrQ6b5Dt_P-caoofjDngxZ7TI_GY1cT8JewJ3zNuM2o4SvvtfJQ1XUVP74NrNE1hRCQgkM00588hpCl4')"></div>
+            </div>
+            <div class="relative group overflow-hidden rounded-xl bg-neutral-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Barber performing a classic hot towel shave" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCzOAJ8pcYZz-11F2x8YYILNS4YkAJNKE2lsDFB4n6U_U3TY4VrWblqkK3axMzVbZ1HeZEJX0g_SwI1qiKW8HAeRYi8kk1eak33w7MCXcbQXWD4XtlddOH0f5nwY7HCyLBs336nBkMHLqmHkRFooC_L-CeLXSiOJLh8AZughgRSNXDBHfphF81yp5kF0UHW7tO9Aa3n8xQ9FTJt04QFLB869h43KRdIiSi_U-q9AJqZchPB--KuIP3pz7sPiuYjSje4rfkoJPgWiuA')"></div>
+            </div>
+            <div class="relative group overflow-hidden rounded-xl bg-neutral-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Details of premium grooming products on shelf" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkshIL-4R3Lft2cE79qq9WC_eMjTn3BKaBjoCVaUcf-Q9wlrLd-xcGxz22_EQ97PHUzceuJlyZ2jFl3RAhdgVuU-nb21Q_SmHkvkTKTuVWsEkLYfx2rpTCUxFG_yp9IXGQZfx0YrhOU0a-A-1SlZzh-z9GmdMzaNgfj0_Ty07MUInA2RnfdO_wa4sqo9sq6gZBXxsm_afj123fLFqKEtwsJ5FFxGu_k6UlaTBMjw9JivdHXQeVkoGu0CNiEd-c2XZcLKYJ9PpkHIA')"></div>
+            </div>
+        </div>
+        <!-- Instagram CTA Section -->
+        <section class="relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-12 lg:p-20 text-center">
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+            <div class="relative z-10 flex flex-col items-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-background-dark" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-3xl font-black mb-4">See More Work On Social</h3>
+                <p class="text-white/60 mb-10 text-lg max-w-lg mx-auto">
+                    Join our community of over 10k style enthusiasts. Get daily inspiration and shop updates.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-primary text-background-dark px-10 py-4 rounded-lg font-extrabold uppercase tracking-widest hover:scale-105 transition-transform flex items-center gap-2">
+                        Follow @DenwinSpa
+                    </button>
+                    <button class="border border-white/20 hover:bg-white/5 text-white px-10 py-4 rounded-lg font-bold transition-all">
+                        View Lookbook
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-black/40 border-t border-white/5 py-12 px-6 lg:px-20 mt-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-3 opacity-50 grayscale">
+                <span class="material-symbols-outlined text-2xl">content_cut</span>
+                <h2 class="text-lg font-bold tracking-tight uppercase">DenwinSpa</h2>
+            </div>
+            <p class="text-white/40 text-sm">© 2024 Denwin Spa Luxury Grooming. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="text-white/40 hover:text-primary transition-colors text-sm">Privacy Policy</a>
+                <a href="#" class="text-white/40 hover:text-primary transition-colors text-sm">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

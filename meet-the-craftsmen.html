@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Meet the Team | Denwin Spa</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9d006",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#231f0f",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased">
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-10">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <div class="size-10 bg-primary rounded-lg flex items-center justify-center text-background-dark transform transition-transform group-hover:rotate-12">
+                            <span class="material-symbols-outlined font-bold">content_cut</span>
+                        </div>
+                        <span class="text-xl font-extrabold tracking-tight uppercase">Denwin Spa</span>
+                    </a>
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+                        <a class="text-sm font-semibold hover:text-primary transition-colors" href="services-portfolio.html">Services</a>
+                        <a class="text-sm font-semibold text-primary transition-colors underline underline-offset-8" href="meet-the-craftsmen.html">Barbers</a>
+                        <a class="text-sm font-semibold hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+                        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Locations</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="hidden lg:flex items-center bg-white/5 border border-white/10 rounded-full px-4 py-1.5 focus-within:border-primary/50 transition-all">
+                        <span class="material-symbols-outlined text-sm text-primary/70">search</span>
+                        <input type="text" placeholder="Search barbers..." class="bg-transparent border-none focus:ring-0 text-sm w-32 placeholder:text-slate-500"/>
+                    </div>
+                    <a href="book-experience.html" class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold transition-all transform active:scale-95 shadow-lg shadow-primary/10">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <!-- Hero Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-4">The Craftsmen</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight">Meet the Masters of the Blade</h1>
+            <p class="text-slate-400 text-lg leading-relaxed">
+                Our team represents the pinnacle of grooming excellence. From traditional straight-razor shaves to cutting-edge modern fades, our artisans are dedicated to your distinct style.
+            </p>
+        </div>
+        <!-- Filter Chips -->
+        <div class="flex items-center justify-center gap-3 mb-16 overflow-x-auto pb-4 scrollbar-hide">
+            <button class="px-6 py-2 rounded-full bg-primary text-background-dark font-bold text-sm whitespace-nowrap">All Specialists</button>
+            <button class="px-6 py-2 rounded-full bg-white/5 border border-white/10 hover:border-primary/50 transition-colors font-medium text-sm whitespace-nowrap">Master Barbers</button>
+            <button class="px-6 py-2 rounded-full bg-white/5 border border-white/10 hover:border-primary/50 transition-colors font-medium text-sm whitespace-nowrap">Senior Stylists</button>
+            <button class="px-6 py-2 rounded-full bg-white/5 border border-white/10 hover:border-primary/50 transition-colors font-medium text-sm whitespace-nowrap">Shave Experts</button>
+            <button class="px-6 py-2 rounded-full bg-white/5 border border-white/10 hover:border-primary/50 transition-colors font-medium text-sm whitespace-nowrap">Colorists</button>
+        </div>
+        <!-- Barber Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+            <!-- Barber 1: Marcus Sterling -->
+            <div class="group flex flex-col bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-primary/40 transition-all duration-300">
+                <div class="relative aspect-[4/5] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Professional barber with a sharp beard and tattoos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB7yo20VWDoVQ7xrWBv_supPcBkoAPXZzmQ7Zgz8dhIx1MUDJO8PWzn6bLAR8DAkrq8FnTQr9O_dz2ylNU92-CHExFvUM9PDIk7Xtmg0JNskuTUHFnh-xdDEY68uIGA8tEFx0uPNkb14zmXfX_fzriintinxUStZNDpr86yGknWSyMtIm3gwHEM8vlRvAZxpmuGI5laOp4bX5ab9dwIy5hrlAcO6bvg6nHU2YKLbeJM-Ey4euifu38mUMX3vwI38ra2xzyj3Qo3c8" alt="Portrait of Marcus Sterling"/>
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-background-dark/80 backdrop-blur-md border border-primary/30 text-primary text-[10px] font-black tracking-widest uppercase rounded">12 Years Exp.</span>
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col flex-1">
+                    <div class="mb-4">
+                        <h3 class="text-2xl font-bold mb-1">Marcus Sterling</h3>
+                        <p class="text-primary text-sm font-semibold uppercase tracking-wide">Master Barber & Founder</p>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                        A veteran of the craft, Marcus blends traditional techniques with modern style. He is world-renowned for his precision with the straight razor and architectural skin fades.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Straight Razor</span>
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Skin Fades</span>
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Executive Cuts</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <button class="flex-1 bg-primary text-background-dark py-3 rounded-lg font-bold text-sm hover:brightness-110 transition-all">Book Marcus</button>
+                            <a href="gallery.html" class="w-12 h-12 flex items-center justify-center border border-white/10 rounded-lg hover:border-primary/50 transition-all text-slate-400 hover:text-primary">
+                                <span class="material-symbols-outlined">visibility</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Barber 2: Elias Thorne -->
+            <div class="group flex flex-col bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-primary/40 transition-all duration-300">
+                <div class="relative aspect-[4/5] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern stylish man with groomed hair and beard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkB3bswKNabWwUUWwV2ycnzCt2VFdBUTTXad9xD_hWZWbvUKymj7a-VvhXWFyo8qQ0qg41-uUfjBIgfy3F1RZ1gXhdUSfP1HjRiY0zfoUbkciNJsYjxwBJCKqSgeZSMQ613Tn8RYTS5UoeiKp5I9HVi415sAx5gcUXOrkWApf37lRVyXeW4waUIa-xnIQz6SELD_fU7NN_6iYI1aGiCArSp-bYxrOa1zX3Klv8Gq266KXVXWbcdr3NWkUFQL3Fo-AgK3h3UuqejAs" alt="Portrait of Elias Thorne"/>
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-background-dark/80 backdrop-blur-md border border-primary/30 text-primary text-[10px] font-black tracking-widest uppercase rounded">8 Years Exp.</span>
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col flex-1">
+                    <div class="mb-4">
+                        <h3 class="text-2xl font-bold mb-1">Elias Thorne</h3>
+                        <p class="text-primary text-sm font-semibold uppercase tracking-wide">Senior Stylist</p>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                        Elias focuses on the architecture of the hair to create timeless, sculpted looks. His attention to facial structure ensures every cut perfectly complements the individual.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Scissor Cuts</span>
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Beard Sculpting</span>
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Styling</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <button class="flex-1 bg-primary text-background-dark py-3 rounded-lg font-bold text-sm hover:brightness-110 transition-all">Book Elias</button>
+                            <a href="gallery.html" class="w-12 h-12 flex items-center justify-center border border-white/10 rounded-lg hover:border-primary/50 transition-all text-slate-400 hover:text-primary">
+                                <span class="material-symbols-outlined">visibility</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Barber 3: Julian Vance -->
+            <div class="group flex flex-col bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-primary/40 transition-all duration-300">
+                <div class="relative aspect-[4/5] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Young professional barber with trendy hairstyle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPATjoz1xzEfk2x7g0OOIVo1O1NXy3l1EeP4vxdHGsGFQUY_lLTKKEnGBmjJhQo_o7hZ6KM3yArQAnEbkGYx7xNX3RKSoxrAJH3aNmJojjilLEaDRwR-o_YcJJ5XuFe3hLtydPNxKKLt5Hog3uF0lrTo9kqdFS0hcaL-hANLsPNUsEAB9Y2ZRspAWGxvNLRvtNARYQm8ZEeUQH69Pu5Tu6NKTjT49L7RNsOA6CxapgNCB01sQl6OpmWfNlBySSD7Do3kwTe2RTxl0" alt="Portrait of Julian Vance"/>
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-background-dark/80 backdrop-blur-md border border-primary/30 text-primary text-[10px] font-black tracking-widest uppercase rounded">10 Years Exp.</span>
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col flex-1">
+                    <div class="mb-4">
+                        <h3 class="text-2xl font-bold mb-1">Julian Vance</h3>
+                        <p class="text-primary text-sm font-semibold uppercase tracking-wide">Artistic Director</p>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                        An expert in creative styling and modern texture techniques. Julian leads our creative sessions and is the go-to specialist for long-hair transformations and texture work.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Creative Styling</span>
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Color Work</span>
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Texture</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <button class="flex-1 bg-primary text-background-dark py-3 rounded-lg font-bold text-sm hover:brightness-110 transition-all">Book Julian</button>
+                            <a href="gallery.html" class="w-12 h-12 flex items-center justify-center border border-white/10 rounded-lg hover:border-primary/50 transition-all text-slate-400 hover:text-primary">
+                                <span class="material-symbols-outlined">visibility</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Barber 4: Silas Reed -->
+            <div class="group flex flex-col bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-primary/40 transition-all duration-300">
+                <div class="relative aspect-[4/5] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Dapper man in a suit with a clean haircut" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD65BulxQkXHMthMwrLXc1PZblpqyn-3Bi2PV8oPLyVS66YJTkwZCkzpiEMb8F-AYEQ02BFM1I67tDRCZqxbIWp97nUtiWvfeP1i-pFaOWVfDpWN3m8UlgFeSbWlCpj8u6Bb_zBOsm2R9cADKsmkJb_KlV0ZZyTCoaa9Yrh-axmEGkhCBd--Lr21CZwg6YirCROD27mAGjxK37JSTXQFfSwI8hIKojCttBfCJfBq07DBltkSYtmnTEb4N_0auPCdLZYufrt9QYUGV8" alt="Portrait of Silas Reed"/>
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-background-dark/80 backdrop-blur-md border border-primary/30 text-primary text-[10px] font-black tracking-widest uppercase rounded">6 Years Exp.</span>
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col flex-1">
+                    <div class="mb-4">
+                        <h3 class="text-2xl font-bold mb-1">Silas Reed</h3>
+                        <p class="text-primary text-sm font-semibold uppercase tracking-wide">Pro Barber</p>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                        Dedicated to clean lines and the perfect contemporary taper. Silas has a keen eye for detail and specializes in making every client look and feel like their best self.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Tapers</span>
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Lineups</span>
+                            <span class="text-[10px] bg-white/5 border border-white/10 px-2 py-1 rounded text-slate-300">Kids Cuts</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <button class="flex-1 bg-primary text-background-dark py-3 rounded-lg font-bold text-sm hover:brightness-110 transition-all">Book Silas</button>
+                            <a href="gallery.html" class="w-12 h-12 flex items-center justify-center border border-white/10 rounded-lg hover:border-primary/50 transition-all text-slate-400 hover:text-primary">
+                                <span class="material-symbols-outlined">visibility</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More team members would follow here -->
+        </div>
+        <!-- Call to Action Footer Section -->
+        <div class="mt-32 rounded-3xl bg-primary overflow-hidden relative group">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+            <div class="relative z-10 p-10 md:p-20 flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="max-w-xl">
+                    <h2 class="text-background-dark text-3xl md:text-5xl font-black mb-4 tracking-tight">Ready for a Transformation?</h2>
+                    <p class="text-background-dark/80 text-lg font-medium">Book a session with any of our master craftsmen today and experience the gold standard of grooming.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                    <a href="book-experience.html" class="bg-background-dark text-white px-10 py-5 rounded-xl font-bold text-lg hover:scale-105 transition-transform text-center">Schedule Now</a>
+                    <button class="bg-transparent border-2 border-background-dark/20 text-background-dark px-10 py-5 rounded-xl font-bold text-lg hover:bg-background-dark/5 transition-colors">Gift Cards</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-white/5 border-t border-white/10 py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="size-8 bg-primary rounded flex items-center justify-center text-background-dark">
+                            <span class="material-symbols-outlined text-sm font-bold">content_cut</span>
+                        </div>
+                        <span class="text-lg font-extrabold uppercase tracking-tight">Denwin Spa</span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">Defining modern grooming since 2012. Join the circle of elite gentlemen.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Explore</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a href="services-portfolio.html" class="hover:text-primary transition-colors">Services Menu</a></li>
+                        <li><a href="meet-the-craftsmen.html" class="hover:text-primary transition-colors">The Team</a></li>
+                        <li><a href="index.html#about" class="hover:text-primary transition-colors">Our Story</a></li>
+                        <li><a href="gallery.html" class="hover:text-primary transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Support</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a href="#" class="hover:text-primary transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Booking Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Locations</h4>
+                    <p class="text-sm text-slate-400 mb-2">Downtown Flagship</p>
+                    <p class="text-xs text-slate-500 mb-6" data-location="New York City">123 Grooming St, New York, NY</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-slate-400 hover:text-primary"><span class="material-symbols-outlined">brand_awareness</span></a>
+                        <a href="#" class="text-slate-400 hover:text-primary"><span class="material-symbols-outlined">public</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-600 text-[10px] uppercase tracking-widest font-bold">© 2024 Denwin Spa. All Rights Reserved.</p>
+                <div class="flex gap-8 text-[10px] uppercase tracking-widest font-bold text-slate-600">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Denwin Spa - Services Catalog</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9d006",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#121212",
+                        "card-dark": "#1E1E1E",
+                        "border-dark": "#2A2A2A",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(12px);
+        }
+        .service-card:hover {
+            border-color: #f9d006;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased">
+    <!-- Top Navigation Bar -->
+    <header class="border-b border-border-dark bg-background-dark/80 backdrop-blur-md sticky top-0 z-[60]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-8">
+                    <a href="index.html" class="flex items-center gap-3 text-primary">
+                        <span class="material-symbols-outlined text-3xl">diamond</span>
+                        <h1 class="text-white text-xl font-extrabold tracking-tighter uppercase">Denwin Spa</h1>
+                    </a>
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-white/70 hover:text-primary text-sm font-semibold transition-colors" href="index.html">Home</a>
+                        <a class="text-primary text-sm font-semibold transition-colors" href="services-portfolio.html">Services</a>
+                        <a class="text-white/70 hover:text-primary text-sm font-semibold transition-colors" href="meet-the-craftsmen.html">Barbers</a>
+                        <a class="text-white/70 hover:text-primary text-sm font-semibold transition-colors" href="my-account.html">Membership</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="hidden lg:flex items-center bg-white/5 rounded-lg px-3 py-1.5 border border-white/10">
+                        <span class="material-symbols-outlined text-white/50 text-xl">search</span>
+                        <input type="text" placeholder="Search services..." class="bg-transparent border-none focus:ring-0 text-sm text-white placeholder:text-white/30 w-48"/>
+                    </div>
+                    <a href="book-experience.html" class="bg-primary hover:bg-primary/90 text-background-dark px-5 py-2 rounded-lg text-sm font-bold transition-all transform active:scale-95">
+                        BOOK NOW
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[40vh] flex items-end pb-12 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent z-10"></div>
+                <div class="w-full h-full bg-center bg-cover scale-105" data-alt="Modern high-end barbershop interior with leather chairs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqVAGFuMBqwd4AmWP2HCiQaC3cxrSuxKxgyuLD3xTGzwi4_UKOB4q_F2w9onspcvDZSfCh3FuRQ-6ZiUWP6iI5ByrI_ssW_MniP9jD-FigovizADa-IIbCSUT__hMMdNIWBy1WdcpbyWMiLqzeLJsUoKpQTnf87OMJeQNAX9R33kFCW_MGx6n5vy_zv_RrTtXee8imAwY-HKnOGsx9zIIHaVmfwFP_MdIulpVzKvZKZynDN_xuV3SMXJkW7reC1B3ds31JYm4qYAk");'>
+                </div>
+            </div>
+            <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div class="max-w-3xl">
+                    <span class="inline-block px-3 py-1 bg-primary text-background-dark text-[10px] font-black uppercase tracking-widest rounded-sm mb-4">The Catalog</span>
+                    <h2 class="text-white text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4">
+                        Precision Grooming <br/>& Wellness
+                    </h2>
+                    <p class="text-white/60 text-lg max-w-xl">
+                        A curated selection of premium services designed for the modern man. Experience the fusion of traditional techniques and contemporary luxury.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Category Sticky Nav -->
+        <nav class="sticky-nav bg-background-dark/90 border-b border-border-dark overflow-x-auto no-scrollbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex gap-8 py-4 whitespace-nowrap">
+                    <a href="#haircuts" class="flex items-center gap-2 text-primary font-bold text-sm tracking-wide group">
+                        <span class="material-symbols-outlined text-xl">content_cut</span>
+                        HAIRCUTS
+                    </a>
+                    <a href="#shaves" class="flex items-center gap-2 text-white/50 hover:text-white font-bold text-sm tracking-wide transition-colors group">
+                        <span class="material-symbols-outlined text-xl">scooter</span>
+                        SHAVES
+                    </a>
+                    <a href="#spa" class="flex items-center gap-2 text-white/50 hover:text-white font-bold text-sm tracking-wide transition-colors group">
+                        <span class="material-symbols-outlined text-xl">spa</span>
+                        SPA TREATMENTS
+                    </a>
+                    <a href="#members" class="flex items-center gap-2 text-white/50 hover:text-white font-bold text-sm tracking-wide transition-colors group">
+                        <span class="material-symbols-outlined text-xl">card_membership</span>
+                        MEMBER SPECIALS
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Services Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- Haircuts Section -->
+            <section id="haircuts" class="mb-20 scroll-mt-24">
+                <div class="flex items-center justify-between mb-8 border-l-4 border-primary pl-6">
+                    <div>
+                        <h3 class="text-3xl font-bold text-white tracking-tight">Haircuts</h3>
+                        <p class="text-white/40 text-sm mt-1 uppercase tracking-widest">Master craftsmanship for your signature look</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Service Card 1 -->
+                    <div class="service-card flex flex-col md:flex-row bg-card-dark rounded-xl overflow-hidden border border-border-dark transition-all duration-300">
+                        <div class="w-full md:w-1/3 h-64 md:h-auto overflow-hidden">
+                            <div class="w-full h-full bg-center bg-cover transition-transform duration-700 hover:scale-110" data-alt="Professional barber performing a detailed haircut fade" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBG4cV57C8s_90MyLcPG8DpN7_ivNJjqdPBO9AqBSLRoPQ6Yic54QQpx_dW9W3i28KxUavLVpKggfIBrWzC6lg65j54s9WcIEnm08TWi2LBrx8_CrY8ntSiXWyxCgEuc59FU2xnnIyJK_LPnZlgNM7SkumAq1GVAQp-SusLNL5iV9HQ79Zh9lbivxmA7CrGtxDpsAWTEAmrf-O3Bg47xeFKWuWssWmvfyCCpqpQ5FlUmc1owx1AvmkPlqnSjHpkegHXifRAHHCPNQg");'>
+                            </div>
+                        </div>
+                        <div class="flex-1 p-8 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-4">
+                                    <h4 class="text-2xl font-bold text-white">The Executive Cut</h4>
+                                    <span class="text-primary font-bold text-xl">$55+</span>
+                                </div>
+                                <p class="text-white/60 leading-relaxed mb-6">
+                                    Our signature service. A precision cut tailored to your head shape and hair type. Includes a consultation, invigorating scalp massage, hot towel treatment, and professional styling with premium apothecary products.
+                                </p>
+                                <div class="flex items-center gap-4 text-white/40 text-sm font-medium">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="material-symbols-outlined text-lg">schedule</span>
+                                        45 Mins
+                                    </div>
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="material-symbols-outlined text-lg">verified</span>
+                                        Senior Barber
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-8 flex gap-4">
+                                <a href="book-experience.html" class="bg-primary hover:bg-primary/90 text-background-dark px-8 py-3 rounded-lg font-bold text-sm tracking-widest uppercase transition-all">Book Now</a>
+                                <button class="border border-white/10 hover:bg-white/5 text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase transition-all">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card flex flex-col md:flex-row bg-card-dark rounded-xl overflow-hidden border border-border-dark transition-all duration-300">
+                        <div class="w-full md:w-1/3 h-64 md:h-auto overflow-hidden">
+                            <div class="w-full h-full bg-center bg-cover transition-transform duration-700 hover:scale-110" data-alt="Styling of a beard and sideburns" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAF3_tjRbmYPsU_falrFmubkm7Sgihshi5iyORs-G3Z3tREh1s7--chlhn8YCxjlm1kc0eI82JwBwCpHliQ_imVYzpT2bNbj1nqvmr0Btip_1ifdV6nmtzpYJFyxm8OZDGUydenVMl_AnUC_KjuMDwqfRX58QKcFENYBVVUgD39JpGEqvEXwI94tBsXKqAnKkvC7IOrJZNSfNi4qO4Vf-2FjJIKP6UY8unGGqyQytTPZ8UzVUIQNn6m9vk18i7__TgWk1ZaXQ7ICbk");'>
+                            </div>
+                        </div>
+                        <div class="flex-1 p-8 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-4">
+                                    <h4 class="text-2xl font-bold text-white">Fade & Beard Sculpting</h4>
+                                    <span class="text-primary font-bold text-xl">$75+</span>
+                                </div>
+                                <p class="text-white/60 leading-relaxed mb-6">
+                                    A complete aesthetic overhaul. High-definition fade combined with expert beard shaping, line-ups, and a moisturizing beard oil treatment. Perfect for maintaining sharp contours and smooth gradients.
+                                </p>
+                                <div class="flex items-center gap-4 text-white/40 text-sm font-medium">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="material-symbols-outlined text-lg">schedule</span>
+                                        60 Mins
+                                    </div>
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="material-symbols-outlined text-lg">check_circle</span>
+                                        Full Service
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-8 flex gap-4">
+                                <a href="book-experience.html" class="bg-primary hover:bg-primary/90 text-background-dark px-8 py-3 rounded-lg font-bold text-sm tracking-widest uppercase transition-all">Book Now</a>
+                                <button class="border border-white/10 hover:bg-white/5 text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase transition-all">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Shaves Section -->
+            <section id="shaves" class="mb-20 scroll-mt-24">
+                <div class="flex items-center justify-between mb-8 border-l-4 border-primary pl-6">
+                    <div>
+                        <h3 class="text-3xl font-bold text-white tracking-tight">Shaves</h3>
+                        <p class="text-white/40 text-sm mt-1 uppercase tracking-widest">Traditional rituals for the ultimate smoothness</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Shave Card 1 -->
+                    <div class="service-card flex flex-col bg-card-dark rounded-xl overflow-hidden border border-border-dark transition-all duration-300">
+                        <div class="h-64 overflow-hidden relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-card-dark to-transparent z-10"></div>
+                            <div class="w-full h-full bg-center bg-cover transition-transform duration-700 hover:scale-110" data-alt="Barber applying shaving cream with a brush" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPdMbGgh3bfTQLyI2EzHb73v-qv1fPhmiZb1T1_SH81QZ16BucgXz3HeFoVpE8eF2BwcwamcBYwnHjfyz4tbIQ8nuK9tIayC35L1Nq9jz5mgbPZJzjsaA4dnfxCFayQWlV-xJck4oFdkicuYEon3E2vHlobYH4lDnLYoyxCDXeT7APcmlLiEslYFklCxOuabzCKopvqERxhOZY1I_lzd3imsvThJT9UnV3PxXdonZvJQQebGvKfkwXT9RWZjInZPzgo--OkGhdJsE");'>
+                            </div>
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-xl font-bold text-white">The Royal Straight Razor</h4>
+                                <span class="text-primary font-bold">$45</span>
+                            </div>
+                            <p class="text-white/50 text-sm leading-relaxed mb-6 flex-1">
+                                Experience the time-honored art of the straight razor. Includes pre-shave oil, hot towel infusion, warm lather, and a double-pass shave for impeccable results.
+                            </p>
+                            <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                                <span class="text-white/40 text-xs font-bold uppercase tracking-widest">30 Mins Duration</span>
+                                <a href="book-experience.html" class="bg-primary/20 hover:bg-primary text-primary hover:text-background-dark px-5 py-2 rounded text-xs font-black transition-all">BOOK SERVICE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Shave Card 2 -->
+                    <div class="service-card flex flex-col bg-card-dark rounded-xl overflow-hidden border border-border-dark transition-all duration-300">
+                        <div class="h-64 overflow-hidden relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-card-dark to-transparent z-10"></div>
+                            <div class="w-full h-full bg-center bg-cover transition-transform duration-700 hover:scale-110" data-alt="Hot towel therapy during a professional shave" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_WgEEvqhlNqqg7dkx3IAKKl5ju3RxxjPV7To-Z3PFTYjaHexE0kSMNFxlRXjf4596d7ZBaUDCuAlJcKrnf2BEnQg0ZSJ7z_v07MYUakQ8P6j1tbL_SNU7jdXWSl7AjDkPNZmyRMUFqTZcpDGoXvIMrNpVdp0OB2ddyF4HAmBt9sviG3QMy2f-2b-zZ8cVzGVQlnEo-izhWztbrxcImWzRHN1K-9ZOBsQy5woQQIOjToSrewU_T2qMzTqqvW7wjyXIT2J_DPLBhFo");'>
+                            </div>
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-xl font-bold text-white">Hot Towel Therapy</h4>
+                                <span class="text-primary font-bold">$35</span>
+                            </div>
+                            <p class="text-white/50 text-sm leading-relaxed mb-6 flex-1">
+                                A revitalizing treatment focusing on skin health. Three stages of hot towels paired with facial massage and essential oils to open pores and soothe irritation.
+                            </p>
+                            <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                                <span class="text-white/40 text-xs font-bold uppercase tracking-widest">20 Mins Duration</span>
+                                <a href="book-experience.html" class="bg-primary/20 hover:bg-primary text-primary hover:text-background-dark px-5 py-2 rounded text-xs font-black transition-all">BOOK SERVICE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Spa Section -->
+            <section id="spa" class="mb-20 scroll-mt-24">
+                <div class="flex items-center justify-between mb-8 border-l-4 border-primary pl-6">
+                    <div>
+                        <h3 class="text-3xl font-bold text-white tracking-tight">Spa Treatments</h3>
+                        <p class="text-white/40 text-sm mt-1 uppercase tracking-widest">Recharge your mind and body</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Spa Card 1 -->
+                    <div class="service-card bg-card-dark rounded-xl border border-border-dark p-6 flex flex-col">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">self_care</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Charcoal Facial</h4>
+                        <p class="text-white/50 text-sm leading-relaxed mb-6 flex-1">
+                            Deep pore cleansing using activated charcoal to remove toxins and impurities. Includes steam and moisturizer.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-primary font-bold">$65</span>
+                            <span class="text-white/30 text-xs">40 Mins</span>
+                        </div>
+                        <a href="book-experience.html" class="block text-center w-full mt-6 bg-white/5 hover:bg-primary hover:text-background-dark text-white py-2 rounded-lg text-xs font-bold transition-all uppercase tracking-widest">Book Now</a>
+                    </div>
+                    <!-- Spa Card 2 -->
+                    <div class="service-card bg-card-dark rounded-xl border border-border-dark p-6 flex flex-col">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">back_hand</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Man Maintenance</h4>
+                        <p class="text-white/50 text-sm leading-relaxed mb-6 flex-1">
+                            Hand and nail grooming focused on professional appearance. Includes cleaning, shaping, and buffing.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-primary font-bold">$40</span>
+                            <span class="text-white/30 text-xs">30 Mins</span>
+                        </div>
+                        <a href="book-experience.html" class="block text-center w-full mt-6 bg-white/5 hover:bg-primary hover:text-background-dark text-white py-2 rounded-lg text-xs font-bold transition-all uppercase tracking-widest">Book Now</a>
+                    </div>
+                    <!-- Spa Card 3 -->
+                    <div class="service-card bg-card-dark rounded-xl border border-border-dark p-6 flex flex-col">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">relax</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Deep Tissue Focus</h4>
+                        <p class="text-white/50 text-sm leading-relaxed mb-6 flex-1">
+                            Targeted neck, shoulder, and back massage to release tension from long work days or heavy training.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-primary font-bold">$80</span>
+                            <span class="text-white/30 text-xs">50 Mins</span>
+                        </div>
+                        <a href="book-experience.html" class="block text-center w-full mt-6 bg-white/5 hover:bg-primary hover:text-background-dark text-white py-2 rounded-lg text-xs font-bold transition-all uppercase tracking-widest">Book Now</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Membership CTA -->
+        <section class="bg-primary py-20" id="members">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-background-dark rounded-2xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 overflow-hidden relative">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <span class="material-symbols-outlined text-[200px] leading-none">stars</span>
+                    </div>
+                    <div class="flex-1 relative z-10">
+                        <h3 class="text-white text-4xl font-black mb-6 tracking-tight">Join the Gentlemen's Club</h3>
+                        <p class="text-white/60 text-lg mb-8 max-w-lg">
+                            Get exclusive access to priority bookings, member-only pricing on all services, and a monthly grooming kit delivered to your door.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="my-account.html" class="bg-primary text-background-dark px-10 py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:scale-105 transition-transform text-center">Get Started</a>
+                            <button class="border border-white/20 text-white px-10 py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-white/5 transition-colors">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block w-1/3 relative z-10">
+                        <div class="aspect-square bg-white/5 rounded-full flex items-center justify-center border border-white/10 p-12">
+                            <span class="material-symbols-outlined text-primary text-9xl">workspace_premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-background-dark border-t border-border-dark py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 text-primary mb-6">
+                        <span class="material-symbols-outlined text-3xl">diamond</span>
+                        <h1 class="text-white text-xl font-extrabold tracking-tighter uppercase">Denwin Spa</h1>
+                    </div>
+                    <p class="text-white/40 max-w-sm">
+                        Defining excellence in modern grooming. Our mission is to provide an sanctuary for the discerning man who values precision and wellness.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Navigate</h5>
+                    <ul class="space-y-4 text-white/50 text-sm">
+                        <li><a href="index.html#about" class="hover:text-primary transition-colors">Our Story</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Gift Cards</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Connect</h5>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/50 hover:bg-primary hover:text-background-dark transition-all">
+                            <span class="material-symbols-outlined">public</span>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/50 hover:bg-primary hover:text-background-dark transition-all">
+                            <span class="material-symbols-outlined">share</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4 text-xs font-medium text-white/20 uppercase tracking-widest">
+                <p>© 2024 FELLAS SPA. ALL RIGHTS RESERVED.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

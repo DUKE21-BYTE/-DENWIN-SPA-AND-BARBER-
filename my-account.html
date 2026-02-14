@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Denwin Spa | Member Dashboard</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9d006",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#1a1a1a",
+                        "surface-dark": "#242424",
+                        "accent-dark": "#2d2d2d",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav {
+            background-color: rgba(249, 208, 6, 0.1);
+            border-left: 3px solid #f9d006;
+            color: #f9d006;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #f9d006 0%, #d4b105 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+    <div class="flex min-h-screen">
+        <!-- Sidebar Navigation -->
+        <aside class="w-72 bg-white dark:bg-[#0a0a0a] border-r border-slate-200 dark:border-white/5 flex flex-col fixed h-full z-50">
+            <div class="p-8">
+                <a href="index.html" class="flex items-center gap-2 mb-10">
+                    <div class="size-8 bg-primary rounded flex items-center justify-center">
+                        <span class="material-symbols-outlined text-black font-bold">spa</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tighter uppercase italic">Denwin Spa</span>
+                </a>
+                <nav class="space-y-2">
+                    <a href="my-account.html" class="flex items-center gap-3 px-4 py-3 rounded-lg active-nav group">
+                        <span class="material-symbols-outlined">dashboard</span>
+                        <span class="font-semibold text-sm">Dashboard</span>
+                    </a>
+                    <a href="book-experience.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5 transition-all">
+                        <span class="material-symbols-outlined">history</span>
+                        <span class="font-semibold text-sm">Booking History</span>
+                    </a>
+                    <a href="services-portfolio.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5 transition-all">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="font-semibold text-sm">Favorite Services</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5 transition-all">
+                        <span class="material-symbols-outlined">settings</span>
+                        <span class="font-semibold text-sm">Profile Settings</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="mt-auto p-6 border-t border-slate-200 dark:border-white/5">
+                <div class="bg-primary/10 rounded-xl p-4 mb-4 border border-primary/20">
+                    <p class="text-xs font-bold text-primary uppercase tracking-widest mb-1">Exclusive Offer</p>
+                    <p class="text-sm font-medium dark:text-white mb-3">Get 20% off your next Swedish Massage.</p>
+                    <button class="w-full py-2 bg-primary text-black font-bold text-xs rounded uppercase tracking-wider">Claim Now</button>
+                </div>
+                <a href="index.html" class="flex items-center gap-3 px-4 py-2 w-full text-slate-500 hover:text-red-500 transition-colors">
+                    <span class="material-symbols-outlined text-sm">logout</span>
+                    <span class="font-semibold text-sm">Logout</span>
+                </a>
+            </div>
+        </aside>
+        <!-- Main Content -->
+        <main class="flex-1 ml-72 p-8 lg:p-12">
+            <!-- Header section -->
+            <header class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+                <div class="flex items-center gap-5">
+                    <div class="relative">
+                        <div class="size-16 rounded-full border-2 border-primary p-0.5">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5nyxrbCdFVvTCHagICfIreb5KecIXk-D826qVrxr5w8oOoBTOvOovti65Z0KYhwvk29F-OvJYmzFNoHR-aFfbdh351dcWl0SsuPUF2FiXuRhrZhaEDzxKgDVEV8WlrbnzLpy9loFug5ryPMSR8XdE_ZsNypHiervtSP1GI1_uT8FFmKQCVsagx-EGwdTKzxw6xWBdny8A65ojzvADm03aumllQZkNcPK1n3kKfJIqVm7AS-W6zZS19oXW4491CBmwh-4yqKKEsb8" alt="Profile" class="size-full rounded-full object-cover" data-alt="Close-up portrait of a professional man smiling"/>
+                        </div>
+                        <div class="absolute -bottom-1 -right-1 bg-primary text-black text-[10px] font-black px-1.5 py-0.5 rounded border-2 border-background-dark uppercase">Gold</div>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold tracking-tight">Welcome back, Marcus</h1>
+                        <p class="text-slate-500 dark:text-slate-400 font-medium">Your next moment of relaxation is waiting.</p>
+                    </div>
+                </div>
+                <a href="book-experience.html" class="gold-gradient text-black font-extrabold px-8 py-4 rounded-lg shadow-lg shadow-primary/20 hover:scale-105 transition-transform flex items-center gap-2">
+                    <span class="material-symbols-outlined font-bold">calendar_month</span>
+                    BOOK NEW APPOINTMENT
+                </a>
+            </header>
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-slate-200 dark:border-white/5 shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="material-symbols-outlined p-2 bg-slate-100 dark:bg-accent-dark rounded-lg text-slate-400">event_available</span>
+                        <span class="text-xs font-bold text-emerald-500 bg-emerald-500/10 px-2 py-1 rounded">+2 this month</span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Total Visits</p>
+                    <p class="text-4xl font-extrabold">24</p>
+                </div>
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-slate-200 dark:border-white/5 shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="material-symbols-outlined p-2 bg-slate-100 dark:bg-accent-dark rounded-lg text-primary">stars</span>
+                        <span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">VIP Tier</span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Loyalty Points</p>
+                    <p class="text-4xl font-extrabold text-primary">1,250 <span class="text-sm font-normal text-slate-500">pts</span></p>
+                </div>
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-slate-200 dark:border-white/5 shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="material-symbols-outlined p-2 bg-slate-100 dark:bg-accent-dark rounded-lg text-slate-400">wallet</span>
+                        <span class="text-xs font-bold text-slate-400 bg-slate-100 dark:bg-accent-dark px-2 py-1 rounded">Next billing: Oct 12</span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Balance</p>
+                    <p class="text-4xl font-extrabold">$142.00</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                <!-- Left Column -->
+                <div class="lg:col-span-8 space-y-10">
+                    <!-- Upcoming Appointments -->
+                    <section>
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold flex items-center gap-2">
+                                <span class="w-1.5 h-6 bg-primary rounded-full"></span>
+                                Upcoming Appointments
+                            </h2>
+                            <a href="#" class="text-primary text-sm font-bold hover:underline">View All</a>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-white dark:bg-surface-dark rounded-xl border-l-4 border-primary shadow-sm overflow-hidden flex flex-col sm:flex-row">
+                                <div class="p-6 flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-black uppercase tracking-tighter rounded">Deep Tissue</span>
+                                        <span class="text-slate-400 text-xs">• 90 Minutes</span>
+                                    </div>
+                                    <h3 class="text-lg font-bold mb-4">Full Body Recovery Session</h3>
+                                    <div class="grid grid-cols-2 gap-4 mb-6">
+                                        <div class="flex items-center gap-2 text-sm text-slate-500">
+                                            <span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+                                            Thursday, Oct 24
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm text-slate-500">
+                                            <span class="material-symbols-outlined text-primary text-sm">schedule</span>
+                                            2:00 PM - 3:30 PM
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <button class="bg-slate-100 dark:bg-accent-dark hover:bg-slate-200 dark:hover:bg-white/10 text-sm font-bold px-4 py-2 rounded-lg transition-colors">Reschedule</button>
+                                        <button class="text-slate-400 hover:text-red-500 text-sm font-bold transition-colors">Cancel</button>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-48 bg-slate-200 dark:bg-accent-dark h-48 sm:h-auto overflow-hidden">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD54C3EbAUoxVslyb_r_tMKw9GZ-TStMsc7YfCwNWU2vFR8oh2ywCJDRgao0jwSQQA4F8PjHRJFI0NJ1jdFQFBAGllnw9HJ9RexxFdDWNTxbQJTq6eLE1kMr56r2dsquIKru6J8dZDzVxLOOtGhEwmbmQtrgS6anLpi50coTIVRkGmPlW6rJhsPJbp4w5azNMeoqZ_NGfwSQkYGP6m2iKYXCzhFMstLPD42RtGVKeFk2hB3xHjJeH0ch0tMgn1C7PQTF_UounGkQKk" alt="Spa Treatment" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Massage therapist hands applying oil on client back"/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Favorite Services -->
+                    <section>
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold flex items-center gap-2">
+                                <span class="w-1.5 h-6 bg-primary rounded-full"></span>
+                                Favorite Services
+                            </h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <a href="book-experience.html" class="group bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 rounded-xl p-4 flex gap-4 hover:border-primary/50 transition-colors cursor-pointer">
+                                <div class="size-20 rounded-lg overflow-hidden flex-shrink-0">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGWgpiNnvcUc38SHjjeKytqShadcDf8ThE8XYwpRgabcCEZVd_IcaxpqN1G9v_SqrqYWOOxclnmvwK4lWVopTTv6DAftWoJmos8GW0bg7ktI-TiVhUnhWvZrMEUlI5d6z_zwpyrrZOj-IxBxn4JnU5RUjUKB0AkK8DQmarnE8iR6IiecpmUFdGsTcJgga34QffxtiZ-lanfK26UWSM8zSVLPr3g8TzHVnsYayH9Iqqrhar0JdKa0vIWip4BY2sXoQK0cxwTCO3jPI" alt="Facial Treatment" class="size-full object-cover" data-alt="Man receiving a facial treatment in spa"/>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="font-bold text-sm mb-1 group-hover:text-primary transition-colors">Gentleman's Signature Facial</h4>
+                                    <p class="text-xs text-slate-500 mb-2">60 min • $85</p>
+                                    <button class="text-[10px] font-black uppercase text-primary tracking-widest flex items-center gap-1">
+                                        Quick Book <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </a>
+                            <a href="book-experience.html" class="group bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 rounded-xl p-4 flex gap-4 hover:border-primary/50 transition-colors cursor-pointer">
+                                <div class="size-20 rounded-lg overflow-hidden flex-shrink-0">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTWLy2Gx1Y7EpwyWOPNJcpvTgIWMwG_eIzBibxmritynnuOCn7pe59LLMCqzlww0_V7Os-g-E6R8fKMawTSWO_uDaAIrQfB1zpO63sQdfm68KDNPoPhhgeM9Fb6-cImfD9DhuhsOb6Bd0uTQM6-3-C0slUUeOJ-wFKRfcXoduMBguXIaj4N6B-nwyUesTa-9q1jXHyrm1YqlMz_34bJkJP299kXYWjPq0QpVr_7HjnWThhDbYHNP3gTTPDl4-FSpyZFJItU0AdD34" alt="Steam Room" class="size-full object-cover" data-alt="Modern luxury sauna steam room interior"/>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="font-bold text-sm mb-1 group-hover:text-primary transition-colors">Aromatherapy Steam Session</h4>
+                                    <p class="text-xs text-slate-500 mb-2">30 min • $45</p>
+                                    <button class="text-[10px] font-black uppercase text-primary tracking-widest flex items-center gap-1">
+                                        Quick Book <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <!-- Booking History Table -->
+                    <section>
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold flex items-center gap-2">
+                                <span class="w-1.5 h-6 bg-primary rounded-full"></span>
+                                Recent History
+                            </h2>
+                        </div>
+                        <div class="bg-white dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-white/5 overflow-hidden shadow-sm">
+                            <table class="w-full text-left text-sm">
+                                <thead class="bg-slate-50 dark:bg-accent-dark text-slate-500 uppercase text-[10px] font-black tracking-widest">
+                                    <tr>
+                                        <th class="px-6 py-4">Service</th>
+                                        <th class="px-6 py-4">Date</th>
+                                        <th class="px-6 py-4">Status</th>
+                                        <th class="px-6 py-4 text-right">Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100 dark:divide-white/5">
+                                    <tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+                                        <td class="px-6 py-4 font-bold">Hot Stone Therapy</td>
+                                        <td class="px-6 py-4 text-slate-500">Sep 18, 2023</td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 text-[10px] font-bold">Completed</span>
+                                        </td>
+                                        <td class="px-6 py-4 text-right font-bold">$110.00</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+                                        <td class="px-6 py-4 font-bold">Sports Massage</td>
+                                        <td class="px-6 py-4 text-slate-500">Aug 30, 2023</td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 text-[10px] font-bold">Completed</span>
+                                        </td>
+                                        <td class="px-6 py-4 text-right font-bold">$95.00</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+                                        <td class="px-6 py-4 font-bold">Classic Haircut</td>
+                                        <td class="px-6 py-4 text-slate-500">Aug 12, 2023</td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-0.5 rounded-full bg-red-500/10 text-red-500 text-[10px] font-bold">Cancelled</span>
+                                        </td>
+                                        <td class="px-6 py-4 text-right font-bold">$0.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+                <!-- Right Column (Settings & Profile) -->
+                <div class="lg:col-span-4 space-y-8">
+                    <!-- Quick Profile Settings -->
+                    <section class="bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 rounded-2xl p-8 shadow-sm">
+                        <h3 class="text-lg font-bold mb-6">Profile Settings</h3>
+                        <div class="space-y-5">
+                            <div>
+                                <label class="block text-[10px] font-black uppercase text-slate-400 tracking-widest mb-2">Full Name</label>
+                                <input type="text" class="w-full bg-slate-100 dark:bg-accent-dark border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary text-sm font-semibold" value="Marcus Aurelius"/>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-black uppercase text-slate-400 tracking-widest mb-2">Email Address</label>
+                                <input type="email" class="w-full bg-slate-100 dark:bg-accent-dark border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary text-sm font-semibold" value="marcus.a@empire.com"/>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-black uppercase text-slate-400 tracking-widest mb-2">Phone Number</label>
+                                <input type="text" class="w-full bg-slate-100 dark:bg-accent-dark border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary text-sm font-semibold" value="+1 (555) 123-4567"/>
+                            </div>
+                            <hr class="border-slate-100 dark:border-white/5 my-6"/>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-semibold">Email Notifications</span>
+                                    <label class="relative inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" checked="" class="sr-only peer"/>
+                                        <div class="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer dark:bg-accent-dark peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+                                    </label>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-semibold">SMS Reminders</span>
+                                    <label class="relative inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" checked="" class="sr-only peer"/>
+                                        <div class="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer dark:bg-accent-dark peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="w-full mt-4 py-3 bg-white dark:bg-accent-dark border border-slate-200 dark:border-white/10 text-sm font-bold rounded-lg hover:border-primary transition-colors">Update Profile</button>
+                        </div>
+                    </section>
+                    <!-- Suggested section -->
+                    <section class="bg-primary/5 border border-primary/20 rounded-2xl p-8 relative overflow-hidden">
+                        <div class="relative z-10">
+                            <h3 class="text-lg font-bold mb-2">Recommended for You</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">Based on your recent recovery sessions.</p>
+                            <div class="bg-white dark:bg-surface-dark/80 backdrop-blur rounded-xl p-4 mb-4 border border-white/10">
+                                <p class="text-[10px] font-black text-primary uppercase tracking-widest mb-1">New Service</p>
+                                <h4 class="font-bold text-sm mb-1">Cryo-Recovery Chamber</h4>
+                                <p class="text-xs text-slate-500 mb-3 leading-relaxed">Boost muscle recovery and reduce inflammation in just 3 minutes.</p>
+                                <button class="w-full py-2 bg-primary text-black font-bold text-xs rounded uppercase">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 size-48 bg-primary/20 blur-[80px] rounded-full"></div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

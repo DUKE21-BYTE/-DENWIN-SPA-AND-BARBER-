@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Booking Confirmed | Denwin Spa & Barbershop</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f9d006",
+              "background-light": "#f8f8f5",
+              "background-dark": "#181711",
+              "surface-dark": "#27251b",
+              "border-dark": "#3a3727",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-white font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Top Navigation -->
+            <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-dark px-6 md:px-20 py-4 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+                <div class="flex items-center gap-3 text-white">
+                    <div class="size-6 text-primary">
+                        <svg viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-white text-xl font-bold leading-tight tracking-tight">Denwin Spa & Barbershop</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-4">
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="User profile picture of a groomed man" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDLQlbvIalkxuDh_YADWiTw19rEIj627RO0uR2Ux4mRqYIVTg9XuyKswqeLwaarx-1C6FzdV5uXZX0BKazf4utdRm7CISbEsEiuyt0MscLVO2mSQ4Q6_uifFSmRbvNFv5NOMEKXFZfu6mbBvkhiW-n98ZkjtaJXTjHpf_VO0_4EJd_Hc_0wFNitVbNam1KyOy4N8rG9L3nrRzIqN-Xx7BRjj6nRj6U9rb0aFuSoPz5tmeOdb89o1R2Gpo7i_HWpx0gmbYeYtIWJ3Q");'></div>
+                </div>
+            </header>
+            <main class="flex flex-1 justify-center py-10 px-4">
+                <div class="layout-content-container flex flex-col max-w-[800px] flex-1">
+                    <!-- Confirmation Hero -->
+                    <div class="flex flex-col items-center text-center mb-10">
+                        <div class="mb-6 flex items-center justify-center size-20 rounded-full bg-primary/10 border-2 border-primary text-primary">
+                            <span class="material-symbols-outlined !text-5xl">check_circle</span>
+                        </div>
+                        <h1 class="text-white tracking-tight text-4xl md:text-5xl font-bold leading-tight mb-4">Booking Confirmed!</h1>
+                        <p class="text-[#bbb69b] text-lg max-w-lg mx-auto">
+                            You're all set, Julian. A confirmation email with your digital ticket and receipt has been sent to your inbox.
+                        </p>
+                        <div class="mt-4 px-3 py-1 bg-surface-dark border border-border-dark rounded-full">
+                            <span class="text-xs font-mono text-[#bbb69b]">Ref: #FSB-99281-X</span>
+                        </div>
+                    </div>
+                    <!-- Appointment Summary Card -->
+                    <div class="p-1 @container">
+                        <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-2xl bg-surface-dark border border-border-dark overflow-hidden">
+                            <div class="w-full @xl:w-1/3 bg-center bg-no-repeat aspect-video @xl:aspect-square bg-cover" data-alt="High-end modern barbershop interior with leather chairs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQE7lpXgwvghheqLnNOepUZcZ6O5GfaEwQUQ1GyjsI2LhVYICPR_Y6xkuF4ogu9iHz8ZO7pcw5DwKb31bCS-twNOxyJ9gaIsIrlnSumtp-H8vA_HIceKrwsHxMGt8LoGmw2PO9EwPOWCXcckXRHRFOld8-6Xii3mdEpZmJbVFBBK-9mutrPIQYCZPTpsWlgChqC18MvlX_vCTNjDvlv9OghMrnFdMPH03lzvhjvw902qgOue_3MC-sH5X_q1d7ghU9nLRlZXTiJbQ");'></div>
+                            <div class="flex w-full grow flex-col items-stretch justify-center gap-4 p-6 md:p-8">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <p class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-1">Appointment Summary</p>
+                                        <h3 class="text-white text-2xl font-bold leading-tight tracking-tight">Executive Haircut</h3>
+                                    </div>
+                                    <div class="hidden @xl:block">
+                                        <span class="material-symbols-outlined text-primary">content_cut</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 border-y border-border-dark/50">
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-[#bbb69b]">person</span>
+                                        <div>
+                                            <p class="text-[#bbb69b] text-xs">Professional</p>
+                                            <p class="text-white font-medium">Julian R.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-[#bbb69b]">calendar_today</span>
+                                        <div>
+                                            <p class="text-[#bbb69b] text-xs">Date</p>
+                                            <p class="text-white font-medium">Sunday, Oct 13, 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-[#bbb69b]">schedule</span>
+                                        <div>
+                                            <p class="text-[#bbb69b] text-xs">Time</p>
+                                            <p class="text-white font-medium">01:30 PM (45 mins)</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-[#bbb69b]">location_on</span>
+                                        <div>
+                                            <p class="text-[#bbb69b] text-xs">Location</p>
+                                            <p class="text-white font-medium">Downtown Lounge</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap gap-3 pt-2">
+                                    <button class="flex-1 flex min-w-[140px] cursor-pointer items-center justify-center gap-2 rounded-lg h-12 px-5 bg-primary text-background-dark text-sm font-bold transition-all hover:bg-primary/90">
+                                        <span class="material-symbols-outlined !text-xl">event</span>
+                                        <span class="truncate">Add to Calendar</span>
+                                    </button>
+                                    <button class="flex items-center justify-center size-12 rounded-lg bg-surface-dark border border-border-dark text-white hover:bg-border-dark transition-colors" title="View Directions">
+                                        <span class="material-symbols-outlined">directions</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- What to Expect -->
+                    <div class="mt-12 px-4">
+                        <h3 class="text-white text-xl font-bold mb-6 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">info</span>
+                            What to expect
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="p-5 rounded-xl bg-surface-dark/40 border border-border-dark flex flex-col gap-3">
+                                <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">1</div>
+                                <p class="text-white font-semibold">Arrive Early</p>
+                                <p class="text-[#bbb69b] text-sm leading-relaxed">Please arrive 10 minutes early to check-in and enjoy a complimentary beverage from our bar.</p>
+                            </div>
+                            <div class="p-5 rounded-xl bg-surface-dark/40 border border-border-dark flex flex-col gap-3">
+                                <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">2</div>
+                                <p class="text-white font-semibold">Check In</p>
+                                <p class="text-[#bbb69b] text-sm leading-relaxed">Provide your name or reference code at the front desk. We'll take your coat and show you to the lounge.</p>
+                            </div>
+                            <div class="p-5 rounded-xl bg-surface-dark/40 border border-border-dark flex flex-col gap-3">
+                                <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">3</div>
+                                <p class="text-white font-semibold">Relax & Refresh</p>
+                                <p class="text-[#bbb69b] text-sm leading-relaxed">Julian will meet you in the lounge shortly. Feel free to use our premium grooming products while you wait.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Actions -->
+                    <div class="mt-12 mb-20 flex flex-col items-center gap-4">
+                        <a href="index.html" class="text-[#bbb69b] hover:text-primary transition-colors flex items-center gap-2 text-sm font-medium">
+                            <span class="material-symbols-outlined !text-lg">arrow_back</span>
+                            Back to Homepage
+                        </a>
+                        <p class="text-[#3a3727] text-xs">Need to reschedule? Call us at (555) 123-4567</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

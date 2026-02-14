@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Book Your Experience | Denwin Spa & Barbershop</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9d006",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#121212",
+                        "surface-dark": "#1e1e1e",
+                        "border-dark": "#2a2a2a",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 w-full border-b border-border-dark bg-background-dark/80 backdrop-blur-md px-6 md:px-12 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="text-primary">
+                    <span class="material-symbols-outlined text-3xl">content_cut</span>
+                </div>
+                <h1 class="text-xl font-extrabold tracking-tight uppercase">Denwin <span class="text-primary">Spa</span></h1>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide uppercase">
+                <a class="hover:text-primary transition-colors" href="services-portfolio.html">Services</a>
+                <a class="hover:text-primary transition-colors" href="meet-the-craftsmen.html">Barbers</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="book-experience.html">Book Now</a>
+                <a class="hover:text-primary transition-colors" href="index.html#about">About</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="my-account.html" class="p-2 hover:bg-white/5 rounded-full transition-colors">
+                    <span class="material-symbols-outlined">person</span>
+                </a>
+                <button class="p-2 hover:bg-white/5 rounded-full transition-colors relative">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 md:px-12 py-10">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Left Selection Column -->
+            <div class="flex-1 space-y-12">
+                <!-- Page Title -->
+                <div>
+                    <h2 class="text-4xl font-black mb-2 uppercase tracking-tighter">Book Your Experience</h2>
+                    <p class="text-slate-400 max-w-lg">Refine your look with our master barbers and premium spa treatments. Select your journey below.</p>
+                </div>
+                <!-- 1. Service Selection -->
+                <section class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-background-dark font-bold text-sm">1</span>
+                        <h3 class="text-2xl font-bold">Select Service</h3>
+                    </div>
+                    <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+                        <button class="px-6 py-2 bg-primary text-background-dark font-bold rounded-full text-sm">All Services</button>
+                        <button class="px-6 py-2 bg-white/5 border border-border-dark hover:border-primary/50 rounded-full text-sm transition-colors">Haircuts</button>
+                        <button class="px-6 py-2 bg-white/5 border border-border-dark hover:border-primary/50 rounded-full text-sm transition-colors">Shaves</button>
+                        <button class="px-6 py-2 bg-white/5 border border-border-dark hover:border-primary/50 rounded-full text-sm transition-colors">Spa & Massage</button>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Service Card 1 -->
+                        <div class="group relative bg-surface-dark border-2 border-primary rounded-xl p-5 cursor-pointer transition-all">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="w-16 h-16 rounded-lg bg-cover bg-center" data-alt="Classic barber haircut tools and chair" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTkTwjjHVlSyDVXcWHpyxschbis0xhc8PbpCJbTII_ib3TmVxgjHv0qiY6VnYpg3PDWOnuC_Nj4rc56c3VplFqlOztCWEq3Ot5HJ86dd6LFZ5fraWRIJrXjDTobll8akGUJxK2VUTvcG1GWDDlsdcrwsMcNlNq8whAZLqTSDQrAf-c8uD9_hLu13Pe1hUnkE6QgEUfTtFSPEpq67YovRyZ4cwzMLh7rupLQSD53Nrr5EdgbpK6w09GKq2M8rLud9w-Kx72Y_hhq7Y')"></div>
+                                <span class="material-symbols-outlined text-primary">check_circle</span>
+                            </div>
+                            <h4 class="text-lg font-bold">Executive Haircut</h4>
+                            <p class="text-slate-400 text-sm mt-1">45 mins • Includes consultation, premium wash, and styling.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <span class="text-xl font-bold text-primary">$50.00</span>
+                            </div>
+                        </div>
+                        <!-- Service Card 2 -->
+                        <div class="group relative bg-surface-dark border-2 border-transparent hover:border-primary/30 rounded-xl p-5 cursor-pointer transition-all">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="w-16 h-16 rounded-lg bg-cover bg-center" data-alt="Close up of a straight razor shave" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyaO3ajL8zRo8wxmPU4vuc5QGYWDuTxuCBi5RD-EFX1-020gbefxCeN1Zmb6j_TJNl5cfjv4d57poYz7ZiyREeaJ3fqhpOKyo7yuTtYkFh1RCR0-uLkFxZ3_IhaZ611zJ9Rf00kIU6vDp6znwGd6z97oTPHugr9o38oZyfyPCu9q8d94McU-C9ma93-DvLk5i_kMOIvWR8KEEQ_fHbyA0SSS6KqmGhb2CRphRG8fEjSqx3ZA9aiRvOPzo5jA9fKYkdeGrB04c0mqQ')"></div>
+                            </div>
+                            <h4 class="text-lg font-bold">Signature Straight Shave</h4>
+                            <p class="text-slate-400 text-sm mt-1">30 mins • Hot towel treatment and precision razor finish.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <span class="text-xl font-bold text-primary">$35.00</span>
+                            </div>
+                        </div>
+                        <!-- Service Card 3 -->
+                        <div class="group relative bg-surface-dark border-2 border-transparent hover:border-primary/30 rounded-xl p-5 cursor-pointer transition-all">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="w-16 h-16 rounded-lg bg-cover bg-center" data-alt="Zen spa environment with towels" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8K99srhYxjr5H-dVCdwXVUjTzsXuNHBW4S9qG_iIznbdpqsOF_1AvvA0ZlRZNemuHV3arhcCZXraoYGlJ49WQOnaIcpH20HlM-qEVJOpxTNAVwx02A3dYl_snOkISpluLVGS00l9zvHFKNtkNRXO9R_P4LNgBm5seLPFUNk1gsM7Upse8wdRqcuA0BxdmvtDLtjVxGF6JV129QyUt0rvjZqWORkmaUNyq9u4YrwZYTJ9O1CP9MGb4_xRbbv3PBTSayb-7C--js1Q')"></div>
+                            </div>
+                            <h4 class="text-lg font-bold">Deep Tissue Massage</h4>
+                            <p class="text-slate-400 text-sm mt-1">60 mins • Intensive muscle relief and relaxation.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <span class="text-xl font-bold text-primary">$85.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 2. Barber Selection -->
+                <section class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-background-dark font-bold text-sm">2</span>
+                        <h3 class="text-2xl font-bold">Select Professional</h3>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <!-- Barber 1 -->
+                        <div class="flex flex-col items-center text-center group cursor-pointer">
+                            <div class="relative mb-3">
+                                <div class="w-24 h-24 rounded-full border-4 border-primary p-1">
+                                    <div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Professional male barber portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGQsKf45IrBHi62eAavwRsUXlC2vX8nDE5dD4QUzIJAPJW08vehz-xd_5nnu78-EralI96qFMnDwmmlPpsWpjPmz2S_7KQStyYkc1LSe_NBxThVh89iB9WnyGlBDYhi01hzCfFbWCGSQGl1mrDV70DHZPU-TW9IhWfZEq90uk-M2d4uKvDyRXv7DbNDJ1bBVelqHF6xWzpQfN2RAg9eVP7bFz3YkjMHgD4PRgVIMAR1yWDmsogP4y2mL9PaS0bi3dVLNGtSF0U3sk')"></div>
+                                </div>
+                                <div class="absolute -bottom-1 right-0 bg-primary text-background-dark text-[10px] font-black px-2 py-0.5 rounded-full uppercase">Master</div>
+                            </div>
+                            <span class="font-bold text-white">Julian R.</span>
+                            <span class="text-slate-500 text-xs">Styles & Shaves</span>
+                        </div>
+                        <!-- Barber 2 -->
+                        <div class="flex flex-col items-center text-center group cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+                            <div class="relative mb-3">
+                                <div class="w-24 h-24 rounded-full border-4 border-transparent group-hover:border-primary/30 p-1">
+                                    <div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Friendly male barber smiling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWv9VgLAzK3GBT7QPK-XEnlarjP1HHRuix6Fa00NpoxwNxbMZdYFP89U9DXQBWHSIkYUdH1hiZjSxWMwJw9V6zb-sou2UqevC64ONeV92FYyIU6iEBsv6Obx10CVySncEr174nuFe0YhmtZdJxTNmnCT2A_EFoX82A_UhIBN6aWxh46sY0SZ0qiMpSc21joiw_eH7HVr5YcD8hxs34Ts1OGAQvdYaPThYgpNxYnRq1gX5N1YAD1RDQN8ZRMB1ghGGU7t90uSo2oHk')"></div>
+                                </div>
+                                <div class="absolute -bottom-1 right-0 bg-white/20 text-white text-[10px] font-black px-2 py-0.5 rounded-full uppercase">Senior</div>
+                            </div>
+                            <span class="font-bold text-white">Marcus T.</span>
+                            <span class="text-slate-500 text-xs">Fades Expert</span>
+                        </div>
+                        <!-- Barber 3 -->
+                        <div class="flex flex-col items-center text-center group cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+                            <div class="relative mb-3">
+                                <div class="w-24 h-24 rounded-full border-4 border-transparent group-hover:border-primary/30 p-1">
+                                    <div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Barber with beard looking professional" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdb9ZZohZfabydn9IRBXbwrKiom8K1t_aWyBChPztpZZ3dJenHk7n1HQ_8Qo-kJMdLDu6ihu36n59keJTHf8ja4uTYKCqlWnO18Q5Ng-fOAva44ipZneKS1vY0LuZ3V3PTWkuGcVZL38CEjyD9GaGjP2BbGBA7zo9GmHTkCfQot37DOR3hMyT9nE8P2ZFWZPhoD5p4vEOh1CufzACUl-z28Oaf6ENJgSA5_uV2lQQA2IomrXpNzfy-yHV71_mtPXQ8VdHv5bFDvuo')"></div>
+                                </div>
+                                <div class="absolute -bottom-1 right-0 bg-white/20 text-white text-[10px] font-black px-2 py-0.5 rounded-full uppercase">Senior</div>
+                            </div>
+                            <span class="font-bold text-white">David L.</span>
+                            <span class="text-slate-500 text-xs">Spa Therapy</span>
+                        </div>
+                        <!-- Barber 4 -->
+                        <div class="flex flex-col items-center text-center group cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+                            <div class="relative mb-3">
+                                <div class="w-24 h-24 rounded-full border-4 border-transparent group-hover:border-primary/30 p-1">
+                                    <div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Young professional barber" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBK47v_9cASv_x9v7U1H-QHa7hIXLgU5E-W0EoRp7RCLa63qQkMq6SUl8NilOF8oko1QVpUSCLzzpGMtvTSzFoW6Jq5DO5pL-opsvcWdaRqTxh3yrJYunls53atRl62LGRhcWZPPfE9tI4QwDZh1HWcoE2uVNA2SrAMtv1dgJ910dGJeRSCnaZ9p8rOq2n7-M2h_b-aToiZMvhKe--4pJFUIR98BrQMAl0dUYf5goIG91Jbv2eAGFSpwK10FDr4ReNTFX7mo9qWnrI')"></div>
+                                </div>
+                            </div>
+                            <span class="font-bold text-white">Alex K.</span>
+                            <span class="text-slate-500 text-xs">Any Barber</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- 3. Date & Time Selection -->
+                <section class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-background-dark font-bold text-sm">3</span>
+                        <h3 class="text-2xl font-bold">Date & Time</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Simple Custom Calendar Style -->
+                        <div class="bg-surface-dark rounded-xl p-6 border border-border-dark">
+                            <div class="flex items-center justify-between mb-6">
+                                <h4 class="font-bold">October 2024</h4>
+                                <div class="flex gap-2">
+                                    <button class="p-1 hover:bg-white/5 rounded"><span class="material-symbols-outlined text-sm">chevron_left</span></button>
+                                    <button class="p-1 hover:bg-white/5 rounded"><span class="material-symbols-outlined text-sm">chevron_right</span></button>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-7 gap-2 text-center text-xs font-bold text-slate-500 mb-4 uppercase tracking-widest">
+                                <div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div>
+                            </div>
+                            <div class="grid grid-cols-7 gap-2 text-center text-sm font-medium">
+                                <div class="p-2 text-slate-700">26</div><div class="p-2 text-slate-700">27</div><div class="p-2 text-slate-700">28</div><div class="p-2 text-slate-700">29</div><div class="p-2 text-slate-700">30</div><div class="p-2">1</div><div class="p-2">2</div>
+                                <div class="p-2">3</div><div class="p-2">4</div><div class="p-2">5</div><div class="p-2">6</div><div class="p-2">7</div><div class="p-2">8</div><div class="p-2">9</div>
+                                <div class="p-2">10</div><div class="p-2">11</div><div class="p-2">12</div><div class="p-2 bg-primary text-background-dark rounded-lg font-bold">13</div><div class="p-2">14</div><div class="p-2">15</div><div class="p-2">16</div>
+                                <div class="p-2">17</div><div class="p-2">18</div><div class="p-2">19</div><div class="p-2">20</div><div class="p-2">21</div><div class="p-2">22</div><div class="p-2">23</div>
+                            </div>
+                        </div>
+                        <!-- Time Slots -->
+                        <div class="space-y-4">
+                            <div>
+                                <h5 class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-3">Morning</h5>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <button class="py-2 bg-white/5 border border-border-dark rounded-lg text-sm hover:border-primary/50 transition-colors">09:00 AM</button>
+                                    <button class="py-2 bg-white/5 border border-border-dark rounded-lg text-sm hover:border-primary/50 transition-colors">10:30 AM</button>
+                                    <button class="py-2 bg-white/5 border border-border-dark rounded-lg text-sm opacity-30 cursor-not-allowed">11:00 AM</button>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-3">Afternoon</h5>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <button class="py-2 bg-primary text-background-dark font-bold rounded-lg text-sm">01:30 PM</button>
+                                    <button class="py-2 bg-white/5 border border-border-dark rounded-lg text-sm hover:border-primary/50 transition-colors">02:45 PM</button>
+                                    <button class="py-2 bg-white/5 border border-border-dark rounded-lg text-sm hover:border-primary/50 transition-colors">04:00 PM</button>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-3">Evening</h5>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <button class="py-2 bg-white/5 border border-border-dark rounded-lg text-sm hover:border-primary/50 transition-colors">06:00 PM</button>
+                                    <button class="py-2 bg-white/5 border border-border-dark rounded-lg text-sm hover:border-primary/50 transition-colors">07:30 PM</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Sticky Sidebar Column -->
+            <aside class="lg:w-96">
+                <div class="sticky top-28 bg-surface-dark border border-border-dark rounded-2xl overflow-hidden">
+                    <div class="bg-primary px-6 py-4">
+                        <h3 class="text-background-dark font-black uppercase tracking-wide">Booking Summary</h3>
+                    </div>
+                    <div class="p-6 space-y-6">
+                        <!-- Selection Breakdown -->
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary mt-0.5">content_cut</span>
+                                <div>
+                                    <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Service</p>
+                                    <p class="font-bold">Executive Haircut</p>
+                                    <p class="text-sm text-slate-400">45 minutes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary mt-0.5">person</span>
+                                <div>
+                                    <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Professional</p>
+                                    <p class="font-bold">Julian R.</p>
+                                    <p class="text-sm text-slate-400">Master Barber</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary mt-0.5">calendar_month</span>
+                                <div>
+                                    <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Appointment</p>
+                                    <p class="font-bold">Oct 13, 2024</p>
+                                    <p class="text-sm text-slate-400">01:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border-border-dark"/>
+                        <!-- Pricing -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-slate-400">Service Price</span>
+                                <span class="font-bold">$50.00</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-slate-400">Tax & Fees</span>
+                                <span class="font-bold">$4.25</span>
+                            </div>
+                            <div class="pt-4 flex justify-between items-center">
+                                <span class="text-lg font-black uppercase">Total</span>
+                                <span class="text-2xl font-black text-primary">$54.25</span>
+                            </div>
+                        </div>
+                        <!-- Special Notes -->
+                        <div class="space-y-2">
+                            <label class="text-xs text-slate-500 uppercase font-bold tracking-widest">Special Requests</label>
+                            <textarea rows="2" placeholder="Tell us anything we should know..." class="w-full bg-background-dark/50 border border-border-dark rounded-lg p-3 text-sm focus:border-primary outline-none transition-colors"></textarea>
+                        </div>
+                        <!-- Action Button -->
+                        <a href="booking-confirmation.html" class="block w-full text-center bg-primary hover:bg-primary/90 text-background-dark font-black py-4 rounded-xl uppercase tracking-widest transition-transform active:scale-95">
+                            Confirm Appointment
+                        </a>
+                        <p class="text-[10px] text-center text-slate-500 px-4">
+                            By confirming, you agree to our 24-hour cancellation policy.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <!-- Simple Footer -->
+    <footer class="mt-20 border-t border-border-dark py-12 px-6 md:px-12 bg-background-dark">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex flex-col items-center md:items-start gap-2">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary">content_cut</span>
+                    <span class="font-black uppercase">Denwin Spa</span>
+                </div>
+                <p class="text-slate-500 text-sm">Premium grooming for the modern gentleman.</p>
+            </div>
+            <div class="flex gap-8 text-sm text-slate-400">
+                <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+            <div class="flex gap-4">
+                <button class="w-10 h-10 rounded-full border border-border-dark flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all">
+                    <span class="material-symbols-outlined text-lg">public</span>
+                </button>
+                <button class="w-10 h-10 rounded-full border border-border-dark flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all">
+                    <span class="material-symbols-outlined text-lg">mail</span>
+                </button>
+            </div>
+        </div>
+        <div class="text-center mt-12 text-[10px] text-slate-700 font-bold uppercase tracking-[0.2em]">
+            © 2024 FELLAS SPA & BARBERSHOP. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+</body>
+</html>
