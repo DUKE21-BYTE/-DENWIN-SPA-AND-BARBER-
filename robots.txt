@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://DUKE21-BYTE.github.io/-DENWIN-SPA-AND-BARBER-/sitemap.xml
